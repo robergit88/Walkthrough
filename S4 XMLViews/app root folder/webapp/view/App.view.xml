@@ -1,0 +1,21 @@
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Text text="Hello World from control text and embebbed on view" />
+</mvc:View>
+
+<!-- Dentro de la etiqueta View, añadimos un control de texto con el valor hardcodeado. -->
+
+<!-- Creamos una nueva carpeta de vista en nuestra carpeta de aplicación web 
+y un nuevo archivo llamado App.view.xml dentro de esta carpeta. 
+El nodo raíz de la estructura XML es la vista. 
+Aquí, hacemos referencia al espacio de nombres predeterminado sap.m 
+donde se encuentran la mayoría de nuestros recursos de interfaz de usuario. 
+Definimos un espacio de nombres adicional sap.ui.core.mvc con alias mvc, 
+donde se ubican las vistas SAPUI5 y todos los demás activos Model-View-Controller (MVC). -->
+
+<!-- El espacio de nombres identifica todos los recursos del proyecto y debe ser único. 
+Si desarrolla su propio código o controles de aplicación, 
+no puede utilizar el prefijo de espacio de nombres sap, 
+porque este espacio de nombres está reservado para recursos de SAP. 
+En su lugar, simplemente defina su propio espacio de nombres único (por ejemplo, myCompany.myApp). -->

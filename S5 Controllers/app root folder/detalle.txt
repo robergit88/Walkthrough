@@ -1,0 +1,10 @@
+********************
+Step 5: Controllers
+********************
+
+En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola mundo" cuando se presiona 
+el botón. El manejo del evento de pulsación del botón se implementa en el controlador de la vista.
+
+Se modifica el fichero webapp/view/App.view.xml
+
+Se crea carpeta y fichero webapp/controller/App.controller.js
