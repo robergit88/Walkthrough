@@ -1,30 +1,42 @@
 <mvc:View
    controllerName="ui5.walkthrough.controller.App"
    xmlns="sap.m"
-   xmlns:mvc="sap.ui.core.mvc">
-   <Button
-      text="{i18n>showHelloButtonText}"
-      press=".onShowHello"/>
-   <Input
-      value="{/recipient/name}"
-      description="Hello {/recipient/name}"
-      valueLiveUpdate="true"
-      width="60%"/>
+   xmlns:mvc="sap.ui.core.mvc"
+  displayBlock="true">
+   <App>
+      <pages>
+         <Page title="{i18n>homePageTitle}">
+            <content>
+               <Panel
+                  headerText="{i18n>helloPanelTitle}">
+                  <content>
+                     <Button
+                        text="{i18n>showHelloButtonText}"
+                        press=".onShowHello"/>
+                     <Input
+                        value="{/recipient/name}"
+                        description="Hello {/recipient/name}"
+                        valueLiveUpdate="true"
+                        width="60%"/>
+                  </content>
+               </Panel>
+            </content>
+         </Page>
+      </pages>
+   </App>
 </mvc:View>
 
-<!-- En la vista XML, conectamos la propiedad showHelloButtonText del modelo i18n 
-para asignar el texto del botón. Un paquete de recursos es una estructura plana,
-por lo que se puede omitir la barra diagonal (/) anterior en la ruta. -->
+<!-- Colocamos tanto el campo de entrada como el botón dentro de un control contenedor llamado sap/m/Page. 
+La página proporciona una agregación de 0..N otros controles llamados contenido. 
+También muestra el atributo de título en una sección de encabezado encima del contenido. 
+La página en sí se coloca en la agregación de páginas de otro control llamado sap/m/App que hace 
+las siguientes cosas importantes para nosotros: 
 
-<!-- Los archivos i18n sólo afectan a los textos de las aplicaciones del lado del cliente. 
-Los textos que se cargan desde los sistemas back-end pueden aparecer 
-en todos los idiomas admitidos por el sistema back-end. -->
+Escribe un montón de propiedades en el encabezado de index.html que son necesarias para una 
+visualización adecuada en dispositivos móviles.
 
-<!-- convenciones -->
-<!-- El modelo de recursos para la internacionalización se llama modelo i18n. -->
-<!-- Las claves del paquete de recursos están escritas en camelCase (inferior). -->
-<!-- Los valores del paquete de recursos pueden contener parámetros como {0}, {1}, {2},… -->
-<!-- Nunca concatene cadenas que estén traducidas, utilice siempre marcadores de posición. -->
-<!-- Utilice secuencias de escape Unicode para caracteres especiales. -->
+Ofrece funcionalidad para navegar entre páginas con animaciones. Usaremos esto pronto.
 
-
+Para que la altura de pantalla completa de la vista funcione correctamente,
+ agregamos el atributo displayBlock con el valor verdadero a la vista. 
+ El contenido real se incluye dentro de un control del Panel para agrupar el contenido relacionado.-->
