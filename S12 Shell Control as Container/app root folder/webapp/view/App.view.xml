@@ -1,0 +1,40 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<Shell>
+		<App>
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<Panel
+							headerText="{i18n>helloPanelTitle}">
+							<content>
+								<Button
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHello"/>
+								<Input
+									value="{/recipient/name}"
+									description="Hello {/recipient/name}"
+									valueLiveUpdate="true"
+									width="60%"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
+
+<!-- El control de shell es ahora el control más externo de nuestra aplicación y muestra automáticamente
+ el llamado buzón, si el tamaño de la pantalla es mayor que un cierto ancho. -->
+
+ <!-- No agregamos el control Shell a la definición de UI declarativa en la vista XML si las aplicaciones 
+ se ejecutan en un shell externo, como la plataforma de lanzamiento de SAP Fiori que ya tiene un shell 
+ alrededor de la UI del componente -->
+
+ <!-- Hay más opciones para personalizar el caparazón, como configurar una imagen o color de fondo
+ personalizado y configurar un logotipo personalizado. Consulte la referencia de API relacionada 
+ para obtener más detalles. -->
