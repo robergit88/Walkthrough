@@ -1,0 +1,58 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<Shell>
+		<App>
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<Panel
+							headerText="{i18n>helloPanelTitle}"
+							class="sapUiResponsiveMargin"
+							width="auto">
+							<content>
+								<Button
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHello"
+									class="sapUiSmallMarginEnd"/>
+								<Input
+									value="{/recipient/name}"
+									valueLiveUpdate="true"
+									width="60%"/>
+								<Text
+									text="Hello {/recipient/name}"
+									class="sapUiSmallMargin"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
+
+<!-- Para diseñar el panel, agregamos la clase CSS sapUiResponsiveMargin que agregará algo de espacio 
+alrededor del panel. Tenemos que configurar el ancho del panel en automático ya que, de lo contrario, 
+el margen se agregaría al ancho predeterminado del 100% y excedería el tamaño de la página. -->
+
+<!-- Si disminuye el tamaño de la pantalla, podrá ver que el margen también disminuye. 
+Como sugiere el nombre, el margen responde y se adapta al tamaño de la pantalla del dispositivo. 
+Las tabletas obtendrán un margen menor y los teléfonos en modo vertical no obtendrán margen para 
+ahorrar espacio en estas pantallas pequeñas. -->
+
+<!-- Los márgenes se pueden agregar a todo tipo de controles y están disponibles en muchas opciones
+ diferentes. Incluso podemos agregar espacio entre el botón y el campo de entrada agregando 
+ la clase sapUiSmallMarginEnd al botón. -->
+
+ <!-- Para formatear el texto de salida individualmente, eliminamos la descripción del campo de entrada 
+ y agregamos un nuevo control de Texto con el mismo valor.
+ Aquí también utilizamos un pequeño margen para alinearlo con el resto del contenido. 
+ De manera similar, podríamos agregar las clases de relleno estándar para diseñar las partes internas 
+ de los controles del contenedor, como nuestro panel, pero como ya trae un relleno por defecto, 
+ esto no es necesario aquí. -->
+
+<!-- Convenciones -->
+
+<!-- Utilice las clases CSS estándar de SAPUI5 para el diseño si es posible. -->
