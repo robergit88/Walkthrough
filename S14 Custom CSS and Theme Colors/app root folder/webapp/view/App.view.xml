@@ -1,0 +1,56 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<Shell>
+		<App  class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<Panel
+							headerText="{i18n>helloPanelTitle}"
+							class="sapUiResponsiveMargin"
+							width="auto">
+							<content>
+								<Button
+									text="{i18n>showHelloButtonText}"
+									press=".onShowHello"
+									class="myCustomButton"/>
+								<Input
+									value="{/recipient/name}"
+									valueLiveUpdate="true"
+									width="60%"/>
+								<FormattedText
+									htmlText="Hello {/recipient/name}"
+									class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+							</content>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
+
+<!-- El control de la aplicación está configurado con nuestra clase de espacio de nombres personalizado 
+myAppDemoWT. Esta clase no tiene reglas de estilo establecidas y se usa en la definición 
+de las reglas CSS para definir selectores CSS que solo son válidos para esta aplicación. -->
+
+<!-- Agregamos nuestra clase CSS personalizada al botón para definir con precisión el espacio entre 
+el botón y el campo de entrada. Ahora tenemos un diseño perfecto en píxeles para el contenido del panel. -->
+
+<!-- Para resaltar el texto de salida, utilizamos un control FormattedText al que se le puede aplicar e
+stilo individualmente, ya sea mediante CSS personalizado o con código HTML.
+Agregamos nuestra clase CSS personalizada (myCustomText) y agregamos una clase CSS dependiente del tema
+para establecer el color de resaltado que se define en el tema. -->
+
+<!-- El color real ahora depende del tema seleccionado, lo que garantiza que el color siempre 
+se ajuste al tema y sea semánticamente claro. -->
+
+<!-- convencion
+No especifique colores en CSS personalizado, utilice en su lugar las clases estándar 
+dependientes del tema. -->
+
+
+
