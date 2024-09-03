@@ -1,6 +1,6 @@
 *********************
 Step 1: Hello World!
-*********************
+********************
 
 Como sabes, SAPUI5 tiene que ver con HTML5. 
 Comencemos por crear un primer "Hola mundo" solo con HTML.
