@@ -1,0 +1,39 @@
+<mvc:View
+   controllerName="ui5.walkthrough.controller.HelloPanel"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Panel
+      headerText="{i18n>helloPanelTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto">
+      <content>
+         <Button
+         id="helloDialogButton"
+         text="{i18n>openDialogButtonText}"
+         press=".onOpenDialog"
+         class="sapUiSmallMarginEnd"/>      
+         <Button
+            text="{i18n>showHelloButtonText}"
+            press=".onShowHello"
+            class="myCustomButton"/>
+         <Input
+            value="{/recipient/name}"
+            valueLiveUpdate="true"
+            width="60%"/>
+         <FormattedText
+            htmlText="Hello {/recipient/name}"
+            class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText"/>
+      </content>
+   </Panel>
+</mvc:View>
+
+<!-- Agregamos un nuevo botón a la vista para abrir el diálogo. 
+Simplemente llama a una función de controlador de eventos en el controlador de la vista de contenido 
+del panel. Necesitaremos el nuevo id="helloDialogButton" en el Paso 28: Integration Test with OPA. -->
+
+<!-- Es una buena práctica establecer una identificación única, como helloWorldButton, 
+en los controles clave de su aplicación para que pueda identificarse fácilmente.
+Si no se especifica el atributo id, el tiempo de ejecución de OpenUI5 genera un ID único pero 
+cambiante como "__button23" para el control. Inspeccione los elementos DOM de su aplicación 
+en el navegador para ver la diferencia. -->
+
