@@ -1,0 +1,27 @@
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+         <ObjectListItem
+            title="{invoice>Quantity} x {invoice>ProductName}"/>
+      </items>
+   </List>
+</mvc:View>
+
+<!-- La nueva vista muestra un control de lista con un texto de encabezado personalizado.
+La agregación de elementos de la lista está vinculada a la ruta raíz Facturas de los datos JSON.
+Y dado que definimos un modelo con nombre, tenemos que anteponer a cada definición vinculante
+ el identificador de factura. -->
+
+<!-- En la agregación de artículos definimos la plantilla de la lista que se repetirá automáticamente
+para cada factura de nuestros datos de prueba. Más precisamente, 
+utilizamos sap/m/ObjectListItem para crear un control para cada elemento secundario agregado
+de la agregación de elementos. La propiedad del título del elemento de la lista está vinculada 
+a las propiedades de una sola factura. Esto se logra definiendo 
+una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado 
+la agregación de artículos mediante items={invoice>/Invoices} a las facturas. -->
