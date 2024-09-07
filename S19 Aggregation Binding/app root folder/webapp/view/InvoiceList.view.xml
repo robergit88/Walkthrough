@@ -24,5 +24,6 @@ En la vinculación de artículos definimos la plantilla de la lista que se repet
 Más precisamente, utilizamos sap/m/ObjectListItem para crear un control para cada elemento secundario agregado
 de la agregación de elementos. La propiedad del título del elemento de la lista está vinculada 
 a las propiedades de una sola factura. Esto se logra definiendo 
-una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado 
+una ruta relativa (sin/al principio). 
+Esto funciona porque hemos vinculado 
 la agregación de artículos mediante items={invoice>/Invoices} a las facturas. -->
