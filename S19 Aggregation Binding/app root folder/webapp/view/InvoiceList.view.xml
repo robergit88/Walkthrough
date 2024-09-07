@@ -13,7 +13,8 @@
    </List>
 </mvc:View>
 
-<!-- La nueva vista muestra un control de lista con un texto de encabezado personalizado.
+<!-- La nueva vista muestra un control de
+de tipo lista con texto de encabezado.
 La agregación de elementos de la lista está vinculada a la ruta raíz Facturas de los datos JSON.
 Y dado que definimos un modelo con nombre, tenemos que anteponer a cada definición vinculante
  el identificador de factura. -->
