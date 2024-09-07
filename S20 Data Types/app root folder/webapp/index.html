@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>UI5 Walkthrough</title>
+	<script id="sap-ui-bootstrap" 
+			src="resources/sap-ui-core.js" 
+			data-sap-ui-theme="sap_horizon"
+			data-sap-ui-libs="sap.m" 
+			data-sap-ui-compat-version="edge" 
+			data-sap-ui-async="true"
+			data-sap-ui-on-init="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-on-init="module:ui5/walkthrough/index" 
+			data-sap-ui-resource-roots='{"ui5.walkthrough": "./"}'>
+     </script>
+</head>
+
+<!--La clase sapUiBody agrega estilos adicionales dependientes del tema para mostrar aplicaciones SAPUI5.-->
+<body class="sapUiBody" id="content"> </body>
+<div data-sap-ui-component data-name="ui5.walkthrough" 
+	 data-id="container" 
+	 data-settings='{"id" : "walkthrough"}'>
+</div>
+</html>
+
+<!-- Ahora declaramos nuestro componente en el cuerpo de nuestro index.html. 
+En el script de arranque de nuestro index.html, habilitamos el módulo ComponentSupport. 
+Luego, declaramos nuestro componente en el cuerpo mediante una etiqueta div. 
+Esto creará una instancia del componente cuando se ejecute el evento onInit. -->
