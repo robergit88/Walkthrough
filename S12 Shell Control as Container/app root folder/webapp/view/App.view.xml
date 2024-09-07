@@ -3,7 +3,7 @@
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true">
-	<Shell>
+	<Shell backgroundColor="red">
 		<App>
 			<pages>
 				<Page title="{i18n>homePageTitle}">
@@ -28,7 +28,7 @@
 	</Shell>
 </mvc:View>
 
-<!-- El control de shell es ahora el control más externo de nuestra aplicación y muestra automáticamente
+<!-- El control shell es ahora el control más externo de nuestra aplicación y muestra automáticamente
  el llamado buzón, si el tamaño de la pantalla es mayor que un cierto ancho. -->
 
  <!-- No agregamos el control Shell a la definición de UI declarativa en la vista XML si las aplicaciones 

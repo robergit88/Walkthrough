@@ -1,5 +1,4 @@
 {
-
   "_version": "1.58.0",
   "sap.app": {
     "id": "ui5.walkthrough",
@@ -20,6 +19,10 @@
     }
   },
   "sap.ui5": {
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
     "dependencies": {
       "minUI5Version": "1.108.0",
       "libs": {
@@ -44,10 +47,5 @@
       "type": "XML",
       "id": "app"
     }
-  },
-
-  "Comentarios": {
-    "_comment": "This is a developer note, not to be parsed.",
-  "name": "John Doe"
-  }  
+  }
 }
