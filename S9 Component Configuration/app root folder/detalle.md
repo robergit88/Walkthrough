@@ -25,7 +25,7 @@ Un campo de entrada y una descripción que muestra el valor del campo de entrada
 (sin cambios visuales en el último paso).
 
 
-1. Se crea el fichero [component](webapp/Component.js)
+1. Se crea el fichero [Component.js](webapp/Component.js)
 
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
