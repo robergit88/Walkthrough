@@ -1,6 +1,6 @@
-
+***
 # Step 18: Icons
-
+***
 Agregaremos un ícono para saludar a nuestros usuarios cuando se abra el cuadro de diálogo.
 
 
