@@ -17,4 +17,4 @@ Se modifica el fichero webapp/controller/App.controller.js
 
 1. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
-2. Se modifica el fichero [App.view.xml]()
+2. Se modifica el fichero [App.view.xml](webapp/view/App.view.xml)
