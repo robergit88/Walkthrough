@@ -49,9 +49,9 @@ Hay tres secciones importantes definidas por espacios de nombres en el archivo m
 
 3. **sap.ui5**
 contiene parámetros de configuración específicos que SAPUI5 procesa automáticamente:
-1. rootView: si especifica este parámetro, el componente creará automáticamente una instancia de la vista y la utilizará como raíz para este componente.
-2. dependencias: Se declaran las bibliotecas de UI utilizadas en la aplicación.
-3. Modelos: Se defininen modelos que serán instanciandos automáticamente cuando se inicie la aplicación.
+  1. rootView: si especifica este parámetro, el componente creará automáticamente una instancia de la vista y la utilizará como raíz para este componente.
+  2. dependencias: Se declaran las bibliotecas de UI utilizadas en la aplicación.
+  3. Modelos: Se defininen modelos que serán instanciandos automáticamente cuando se inicie la aplicación.
 
 
 Definimos el nombre del modelo "i18n" como clave y especificamos el archivo del paquete por espacio de nombres. 
