@@ -1,6 +1,6 @@
-******************************
+*******************
 # Step 8: Translatable Texts
-******************************
+*******************
 
 En este paso movemos los textos de nuestra interfaz de usuario a un archivo de recursos separado.
 
