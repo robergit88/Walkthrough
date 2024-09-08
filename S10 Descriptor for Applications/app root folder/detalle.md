@@ -29,19 +29,18 @@ Hay tres secciones importantes definidas por espacios de nombres en el archivo m
 
 1. **sap.app**
 
-
    Contiene los siguientes atributos específicos de la aplicación:
-    A. id (obligatorio): el espacio de nombres de nuestro componente de aplicación.
+    1.1 id (obligatorio): el espacio de nombres de nuestro componente de aplicación.
     El ID no debe exceder los 70 caracteres. Debe ser único y debe corresponder al ID/espacio 
     de nombres del componente.
-    B. tipo: Define lo que queremos configurar; aquí: una aplicación.
-    C. i18n: define la ruta al archivo del paquete de recursos.
-    D. título: título de la aplicación.
-    E. descripción: texto de descripción breve de lo que hace la aplicación.
-    F. applicationVersion: La versión de la aplicación para poder actualizarla fácilmente más adelante.
+    1.2 tipo: Define lo que queremos configurar; aquí: una aplicación.
+    1.3 i18n: define la ruta al archivo del paquete de recursos.
+    1.4 título: título de la aplicación.
+    1.5 descripción: texto de descripción breve de lo que hace la aplicación.
+    1.6 applicationVersion: La versión de la aplicación para poder actualizarla fácilmente más adelante.
 
 
-2. sap.ui
+2. **sap.ui**
    Contiene los siguientes atributos específicos de la interfaz de usuario:
    A. tecnología: valor especifica la tecnología de la interfaz de usuario; 
    en nuestro caso usamos SAPUI5.
