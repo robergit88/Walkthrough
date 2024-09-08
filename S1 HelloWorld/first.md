@@ -1,3 +1,3 @@
-#Este es el primer detalle
+# Este es el primer detalle
 
-##Subtitulo
+## Subtitulo
