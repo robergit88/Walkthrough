@@ -15,8 +15,8 @@ Si se decide anular los estilos de la API pública, se deberá probar y actualiz
 cada vez que se actualice SAPUI5.
 
 
-1. Se crea carpeta 📂 y fichero [style.css](webapp/css/style.css).
+1. Se crea carpeta 📂 y fichero [style.css](webapp/css/style.css)
 
-2. Se modifica el fichero [manifest.json](webapp/manifest.json).
+2. Se modifica el fichero [manifest.json](webapp/manifest.json)
 
 3. Se modifica el fichero [App.view.xml](webapp/view/App.view.xml)
