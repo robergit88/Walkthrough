@@ -7,6 +7,15 @@ En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola m
 
 El manejo del evento clik del botón se implementa en el controlador de la vista.
 
+`<mvc:View
+   controllerName="ui5.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Button
+      text="Say Hello"
+      press=".onShowHello"/>
+</mvc:View>`
+
 
 1. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
 
