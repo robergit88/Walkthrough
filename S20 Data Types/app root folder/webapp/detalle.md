@@ -1,5 +1,5 @@
 *****************************
-Step 20: Data Types
+# Step 20: Data Types
 *****************************
 
 La lista de facturas ya pinta bien, pero ¿qué es una factura sin precio asignado? 
