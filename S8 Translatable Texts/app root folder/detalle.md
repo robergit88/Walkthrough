@@ -1,4 +1,4 @@
-**************************
+⁸**************************
 # Step 8: Translatable Texts
 **************************
 
@@ -9,7 +9,7 @@ De esta manera, todos están en un lugar central y pueden traducirse fácilmente
 Este proceso de internacionalización (en resumen, i18n) se logra en SAPUI5 mediante el uso de un modelo de recursos especial y la sintaxis de enlace de datos estándar, pero sin un carácter "/" precedente.
 
 
-## Creamos la carpeta webapp/i18n y dentro el archivo i18n.properties.
+Creamos la carpeta webapp/i18n y dentro el archivo i18n.properties.
 
 El nombre del paquete resuelto es ui5.walkthrough.i18n, como veremos más adelante
 El archivo de propiedades de textos contiene pares de nombre-valor para cada elemento. 
