@@ -17,7 +17,7 @@ de modelos como nuestro paquete de recursos i18n.
 1. Se crea fichero [manifest.json](webapp/manifest.json)
 2. Se modifica [index.html](webapp/index.html)
 3. Se elimina fichero index.js, porque el descriptor ahora se encarga de todo.
-4. Se modifica fichero [fichero webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+4. Se modifica fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 5. Se modifica fichero [Component.js](webapp/Component.js)
 
 El contenido del archivo manifest.json es un objeto de configuración en formato JSON que contiene todas las configuraciones y parámetros globales de la aplicación.
@@ -27,7 +27,9 @@ Se almacena en la carpeta de la aplicación web y SAPUI5 lo lee para crear una i
 Hay tres secciones importantes definidas por espacios de nombres en el archivo manifest.json:
 
 
-1. sap.app
+1. **sap.app**
+
+
    Contiene los siguientes atributos específicos de la aplicación:
     A. id (obligatorio): el espacio de nombres de nuestro componente de aplicación.
     El ID no debe exceder los 70 caracteres. Debe ser único y debe corresponder al ID/espacio 
