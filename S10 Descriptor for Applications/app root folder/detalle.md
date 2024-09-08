@@ -41,18 +41,17 @@ Hay tres secciones importantes definidas por espacios de nombres en el archivo m
 
 2. **sap.ui**
    Contiene los siguientes atributos específicos de la interfaz de usuario:
-   A. tecnología: valor especifica la tecnología de la interfaz de usuario; 
+   1. tecnología: valor especifica la tecnología de la interfaz de usuario; 
    en nuestro caso usamos SAPUI5.
-   DeviceTypes: indica qué dispositivos son compatibles con la aplicación: 
+   2. DeviceTypes: indica qué dispositivos son compatibles con la aplicación: 
    computadora de escritorio, tableta, teléfono (todos son verdaderos de forma predeterminada).
 
 
-3. sap.ui5
+3. **sap.ui5**
 contiene parámetros de configuración específicos que SAPUI5 procesa automáticamente:
-A. rootView: si especifica este parámetro, el componente creará automáticamente una instancia de la vista 
-y la utilizará como raíz para este componente.
-B. dependencias: Se declaran las bibliotecas de UI utilizadas en la aplicación.
-C. Modelos: Se defininen modelos que serán instanciandos automáticamente cuando se inicie la aplicación.
+1. rootView: si especifica este parámetro, el componente creará automáticamente una instancia de la vista y la utilizará como raíz para este componente.
+2. dependencias: Se declaran las bibliotecas de UI utilizadas en la aplicación.
+3. Modelos: Se defininen modelos que serán instanciandos automáticamente cuando se inicie la aplicación.
 
 
 Definimos el nombre del modelo "i18n" como clave y especificamos el archivo del paquete por espacio de nombres. 
