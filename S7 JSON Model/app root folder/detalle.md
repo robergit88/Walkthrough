@@ -46,7 +46,18 @@ sap.ui.define([
    });
 });
 ```
+Agregamos una función onInit al controlador. Este es uno de los métodos del ciclo de vida de SAPUI5 que el sistema invoca cuando se crea un controlador, similar al constructor de un control.
 
+Dentro de la función creamos una instancia de un modelo JSON. 
+
+
+Los datos del modelo solo contienen una única propiedad para el "destinatario", y dentro de este también contienen una propiedad adicional para el nombre.
+
+
+Para poder utilizar este modelo en la vista, llamamos a la función setModel y pasamos nuestro modelo recién creado.
+
+
+El mensaje solo muestra el mensaje estático "Hola mundo". 
 
 2. Se modifica la vista [App.view.xml](webapp/view/App.view.xml)
 ``` XML
