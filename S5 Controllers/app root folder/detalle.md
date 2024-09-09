@@ -39,7 +39,7 @@ sap.ui.define([
 ```
 
 
-## Convenciones:
+> Convenciones:
 1. Los nombres de los controladores están en mayúscula.
 2. Los controladores llevan el mismo nombre que la vista relacionada (si hay una relación 1:1).
 3. Los controladores de eventos tienen el prefijo on.
