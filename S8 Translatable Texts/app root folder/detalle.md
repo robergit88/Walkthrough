@@ -40,6 +40,7 @@ sap.ui.define([
 
    return Controller.extend("ui5.walkthrough.controller.App", {
 
+// actividades de inicio del controlador
      onInit() {
 
  //Se define modelo de datos local
@@ -52,21 +53,27 @@ sap.ui.define([
   const oModel = new JSONModel(oData);
   this.getView().setModel(oModel);
 
-// Se establece el modelo i18n sobre la vista
+// Se instancia modelo i18n
    const i18nModel = new ResourceModel({
  bundleName: "ui5.walkthrough.i18n.i18n"});
- this.getView().setModel(i18nModel, "i18n");},
+ 
+// Se asigna modelo i18n a la vista
+this.getView().setModel(i18nModel, "i18n");},
 
+// Método saludar
    onShowHello() {
-    //Se lee el mensaje desde el modelo i18n
-   const oBundle = this.getView().getModel("i18n").getResourceBundle();
-    
+ 
+//Se recupera modelo i18n de la vista
+const oBundle = this.getView().getModel("i18n").getResourceBundle();
+
+// se obtiene destinatario de i18n  
 const sRecipient = this.getView().getModel().getProperty("/recipient/name");
 
+//Se compone mensaje
 const sMsg = oBundle.getText("helloMsg", [sRecipient]);
 
-         // Se muestra el mensaje
-         MessageToast.show(sMsg);
+// Se muestra el mensaje
+   MessageToast.show(sMsg);
       }
    });
 });
