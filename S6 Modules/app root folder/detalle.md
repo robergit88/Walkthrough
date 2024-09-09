@@ -13,19 +13,18 @@ En este paso, reemplazamos la sentencia alert con un mensaje de la biblioteca sa
 ``` js
 sap.ui.define([
    "sap/ui/core/mvc/Controller",
-   "sap/m/MessageToast"
-], (Controller, MessageToast) => {
+   "sap/m/MessageToast"]
+  ,(Controller, MessageToast) => {
    "use strict";
 
    return Controller.extend("ui5.walkthrough.controller.App", {
       onShowHello() {
 
 //       begin delete         
-//       Se muestra alerta de javascript nativo
-//          alert("Hello World");
+//       alert("Hello World");
 //       end delete
 
-         MessageToast.show("Hello World from message toast module");
+ MessageToast.show("Hello World from message toast module");
       }
    });
 });
