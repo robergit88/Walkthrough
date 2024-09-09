@@ -24,6 +24,49 @@ Cuando un usuario ejecuta la aplicación, SAPUI5 cargará el archivo de idioma q
 
 1. se crea carpeta 📂 y fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 
-2. Se modifica el fichero [webapp/controller/ App.controller.js](webapp/controller/App.controller.js)
+2. Se modifica el controlador [webapp/controller/ App.controller.js](webapp/controller/App.controller.js)
+
+``` js
+sap.ui.define([
+   "sap/ui/core/mvc/Controller",
+   "sap/m/MessageToast",
+   "sap/ui/model/json/JSONModel",
+   "sap/ui/model/resource/ResourceModel"], (Controller, MessageToast, JSONModel, ResourceModel) => {
+   "use strict";
+
+   return Controller.extend("ui5.walkthrough.controller.App", {
+
+     onInit() {
+
+ //Se define modelo de datos local
+   const oData = {
+            recipient : {
+               name : "World" }
+         };
+
+//Se asigna modelo a la vista
+  const oModel = new JSONModel(oData);
+  this.getView().setModel(oModel);
+
+// Se establece el modelo i18n sobre la vista
+   const i18nModel = new ResourceModel({
+ bundleName: "ui5.walkthrough.i18n.i18n"});
+ this.getView().setModel(i18nModel, "i18n");},
+
+   onShowHello() {
+    //Se lee el mensaje desde el modelo i18n
+   const oBundle = this.getView().getModel("i18n").getResourceBundle();
+    
+const sRecipient = this.getView().getModel().getProperty("/recipient/name");
+
+const sMsg = oBundle.getText("helloMsg", [sRecipient]);
+
+         // Se muestra el mensaje
+         MessageToast.show(sMsg);
+      }
+   });
+});
+```
+
 
 3. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
