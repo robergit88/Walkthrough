@@ -14,7 +14,7 @@ La descripción se actualizará directamente a medida que el usuario escriba.
 Un campo de entrada y una descripción que muestra el valor del campo de entrada.
 
 
-1. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
+1. Se modifica el controlador [App.controller.js](webapp/controller/App.controller.js)
 
 
 ``` js
@@ -48,7 +48,7 @@ sap.ui.define([
 ```
 
 
-2. Se modifica el fichero [App.view.xml](webapp/view/App.view.xml)
+2. Se modifica la vista [App.view.xml](webapp/view/App.view.xml)
 ``` XML
 <mvc:View
    controllerName="ui5.walkthrough.controller.App"
