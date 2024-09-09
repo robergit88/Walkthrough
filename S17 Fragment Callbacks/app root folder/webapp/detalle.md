@@ -11,7 +11,7 @@ por lo que agregamos un botón para cerrar el cuadro de diálogo y asignamos un 
 El cuadro de diálogo ahora tiene un botón "Ok".
 
 
-1. Se modifica el fichero [webapp/controller/HelloPanel.controller.js]([webapp/controller/HelloPanel.controller.js)
+1. Se modifica el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
 2. Se modifica el fichero [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
 
