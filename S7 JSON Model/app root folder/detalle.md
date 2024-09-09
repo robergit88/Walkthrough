@@ -14,7 +14,35 @@ La descripción se actualizará directamente a medida que el usuario escriba.
 Un campo de entrada y una descripción que muestra el valor del campo de entrada.
 
 
-
 1. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
+
+
+``` js
+sap.ui.define([
+   "sap/ui/core/mvc/Controller",
+   "sap/m/MessageToast",
+   "sap/ui/model/json/JSONModel"
+], (Controller, MessageToast, JSONModel) => {
+   "use strict";
+
+   return Controller.extend("ui5.walkthrough.controller.App", {
+      onInit() {
+         // set data model on view
+         const oData = {
+            recipient : {
+               name : "World from oData model"
+            }
+         };
+         const oModel = new JSONModel(oData);
+         this.getView().setModel(oModel);
+      },
+
+      onShowHello() {
+         MessageToast.show("Hello World");
+      }
+   });
+});
+```
+
 
 2. Se modifica el fichero [App.view.xml](webapp/view/App.view.xml)
