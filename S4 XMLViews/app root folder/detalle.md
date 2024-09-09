@@ -16,3 +16,11 @@ Sin embargo, el aspecto de nuestra interfaz de usuario no cambiará.
 El texto "Hola mundo" ahora se mostrara mediante un control SAPUI5 (sin cambios visuales en el último paso).
 
 1. Se crea nueva carpeta 📂 y fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
+
+```xml
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <Text text="Hello World from control text and embebbed on view" />
+</mvc:View>
+```
