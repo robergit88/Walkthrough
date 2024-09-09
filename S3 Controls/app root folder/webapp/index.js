@@ -1,9 +1,8 @@
-sap.ui.define([ "sap/m/Text"], 
+sap.ui.define(["sap/m/Text"], 
     (Text) => {
     "use strict";
 
-    new Text({ text: "Hello World from text control"}).placeAt("content"); 
-
+new Text({ text: "Hello World from text control"}).placeAt("content"); 
 });
 
 //En lugar de usar JavaScript nativo para mostrar un cuadro de diálogo, 
