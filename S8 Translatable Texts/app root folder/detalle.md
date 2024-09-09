@@ -80,4 +80,23 @@ const sMsg = oBundle.getText("helloMsg", [sRecipient]);
 ```
 
 
-3. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
+3. Se modifica la vista [webapp/view/App.view.xml](webapp/view/App.view.xml)
+
+``` XML
+<mvc:View
+   controllerName="ui5.walkthrough.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+
+   <Button
+      text="{i18n>showHelloButtonText}"
+      press=".onShowHello"/>
+
+   <Input
+      value="{/recipient/name}"
+      description="Hello {/recipient/name}"
+      valueLiveUpdate="true"
+      width="60%"/>
+
+</mvc:View>
+```
