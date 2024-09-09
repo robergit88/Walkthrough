@@ -21,18 +21,21 @@ Un campo de entrada y una descripción que muestra el valor del campo de entrada
 sap.ui.define([
    "sap/ui/core/mvc/Controller",
    "sap/m/MessageToast",
-   "sap/ui/model/json/JSONModel"
-], (Controller, MessageToast, JSONModel) => {
+   "sap/ui/model/json/JSONModel"]
+,(Controller, MessageToast, JSONModel) => {
    "use strict";
 
    return Controller.extend("ui5.walkthrough.controller.App", {
+
       onInit() {
-         // set data model on view
+   // se configura modelo local en formato json
          const oData = {
             recipient : {
                name : "World from oData model"
             }
          };
+
+  // se asigna modelo a la vista 
          const oModel = new JSONModel(oData);
          this.getView().setModel(oModel);
       },
