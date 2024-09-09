@@ -5,7 +5,7 @@
 En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola mundo" cuando se presiona el botón.
 
 
-1. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
+1. Se modifica la vista [webapp/view/App.view.xml](webapp/view/App.view.xml)
 
 ``` xml
 <mvc:View
