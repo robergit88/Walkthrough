@@ -7,7 +7,7 @@ En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola m
 
 El manejo del evento clik del botón se implementa en el controlador de la vista.
 
-```
+``` js
 <mvc:View
    controllerName="ui5.walkthrough.controller.App"
    xmlns="sap.m"
