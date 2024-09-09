@@ -13,8 +13,9 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 1. Se modifica el fichero [webapp/index.html](webapp/index.html)
 2. Se crea el fichero [webapp/index.js](webapp/index.js)
 
-| Rank | lenguajes de programación|
-|-----|---------------|
-|     1| abap              |
-|     2| cobol             |
-|     3| lisp            |
+``` js
+sap.ui.define([], () => {
+    "use strict";
+    alert("UI5 is ready");
+});
+```
