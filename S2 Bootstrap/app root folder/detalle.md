@@ -14,7 +14,7 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 2. Se crea el fichero [index.js](webapp/index.js)
 
 | Rank | THING-TO-RANK |
-|-----:|---------------|
+|-----|---------------|
 |     1|               |
 |     2|               |
 |     3|               |
