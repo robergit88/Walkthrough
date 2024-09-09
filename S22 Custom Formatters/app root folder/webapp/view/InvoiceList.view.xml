@@ -20,13 +20,13 @@ controllerName="ui5.walkthrough.controller.InvoiceList"
                     
            numberUnit="{view>/currency}"
            numberState="{= ${invoice>ExtendedPrice} > 7 ? 'Error' : 'Success' }"/>
-                <!-- <firstStatus>
-                    <ObjectStatus
-                        text="{
-                            path: 'invoice>Status',
-                            formatter: '.formatter.statusText'
-                        }"/>
-                </firstStatus> -->
+               <!-- <firstStatus>
+					<ObjectStatus
+						text="{
+							path: 'invoice>Status',
+							formatter: '.formatter.statusText'
+						}"
+					/> -->
       </items>
    </List>
 </mvc:View>
