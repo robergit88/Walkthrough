@@ -12,3 +12,9 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 
 1. Se modifica el fichero [index.html](webapp/index.html)
 2. Se crea el fichero [index.js](webapp/index.js)
+
+| Rank | THING-TO-RANK |
+|-----:|---------------|
+|     1|               |
+|     2|               |
+|     3|               |
