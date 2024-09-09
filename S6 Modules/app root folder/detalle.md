@@ -31,7 +31,7 @@ sap.ui.define([
 });
 ```
 
-### convenciones
+### Convenciones
 1. #### Utilice sap.ui.define para controladores y todos los demás módulos de JavaScript para definir un espacio de nombres global. Con el espacio de nombres, se puede abordar el objeto en toda la aplicación.
 2. #### Utilice sap.ui.require para cargar dependencias de forma asincrónica pero sin declarar un espacio de nombres, por ejemplo, código que solo necesita ejecutarse, pero no necesita ser llamado desde otro código.
 3. #### Utilice el nombre del artefacto a cargar para nombrar los parámetros de la función (sin espacio de nombres).
