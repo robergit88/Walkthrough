@@ -72,8 +72,8 @@ Vinculamos su valor a un modelo SAPUI5 utilizando la sintaxis de vinculación
 declarativa para vistas XML.
 
 
-Las llaves {...} indican que los datos se toman del valor de la propiedad del nombre 
-del objeto del destinatario. Esto se llama "vinculación de datos".
+Las llaves {...} indican que los datos se toman del valor de la propiedad nombre 
+del objeto destinatario. Esto se llama "vinculación de datos".
 
 
 /destinatario/nombre declara la ruta en el modelo.
