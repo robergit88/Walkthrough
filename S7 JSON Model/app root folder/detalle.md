@@ -64,3 +64,16 @@ sap.ui.define([
       width="60%"/>
 </mvc:View>
 ```
+
+Agregamos un control sap/m/Input a la vista. Con esto, el usuario puede ingresar un destinatario para los saludos. 
+
+
+Vinculamos su valor a un modelo SAPUI5 utilizando la sintaxis de vinculación 
+declarativa para vistas XML.
+
+
+Las llaves {...} indican que los datos se toman del valor de la propiedad del nombre 
+del objeto del destinatario. Esto se llama "vinculación de datos".
+
+
+/destinatario/nombre declara la ruta en el modelo.
