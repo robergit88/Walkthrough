@@ -22,7 +22,8 @@ con un sufijo para la configuración regional.
 por ejemplo, i18n_de.properties para alemán, i18n_en.properties para inglés, etc. 
 Cuando un usuario ejecuta la aplicación, SAPUI5 cargará el archivo de idioma que mejor se adapte al entorno del usuario.
 
-1. Se modifica el fichero [webapp/controller/ App.controller.js](webapp/controller/App.controller.js)
+1. se crea carpeta 📂 y fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 
+2. Se modifica el fichero [webapp/controller/ App.controller.js](webapp/controller/App.controller.js)
 
-2. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
+3. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
