@@ -19,9 +19,7 @@ Siempre que accedamos a recursos, ahora lo haremos en relación con el component
 
 Este cambio de arquitectura permite que nuestra aplicación se utilice en entornos más flexibles
 que nuestra página index.html estática, como en un contenedor circundante como la plataforma de lanzamiento de SAP Fiori.
-
-
-Un campo de entrada y una descripción que muestra el valor del campo de entrada 
+ 
 (sin cambios visuales en el último paso).
 
 
