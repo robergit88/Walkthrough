@@ -61,18 +61,22 @@ El mensaje solo muestra el mensaje estático "Hola mundo".
 
 2. Se modifica la vista [App.view.xml](webapp/view/App.view.xml)
 ``` XML
+
 <mvc:View
    controllerName="ui5.walkthrough.controller.App"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
+
    <Button
       text="Say Hello"
       press=".onShowHello"/>
+
    <Input
       value="{/recipient/name}"
       description="Hello {/recipient/name}"
       valueLiveUpdate="true"
       width="60%"/>
+
 </mvc:View>
 ```
 
