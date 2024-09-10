@@ -39,7 +39,7 @@ El objeto de filtro contendrá nuestra configuración para la acción de filtrad
 En la función **onFilterInvoices** construimos un objeto de filtro a partir de la cadena de búsqueda que el usuario ha escrito en el campo de búsqueda. 
 
 
-####Los controladores de eventos siempre reciben un argumento de evento que se puede utilizar para acceder a los parámetros que proporciona el evento. 
+#### Los controladores de eventos siempre reciben un argumento de evento que se puede utilizar para acceder a los parámetros que proporciona el evento. 
 
 
 En nuestro caso, el campo de búsqueda define una consulta de parámetros a la que accedemos llamando a **getParameter("query")** en el parámetro **oEvent**.
