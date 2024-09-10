@@ -8,6 +8,8 @@ En este paso, agregamos un campo de búsqueda para nuestra lista de productos y 
 Se muestra un campo de búsqueda encima de la lista.
 
 1. Se modifica fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml).
+
+
 La vista se amplía con un control de búsqueda que agregamos a la lista de facturas. También necesitamos especificar un ID invoiceList para que el control de lista pueda identificar la lista a partir de la función del controlador de eventos onFilterInvoices que agregamos al campo de búsqueda. Además, el campo de búsqueda es parte del encabezado de la lista y, por lo tanto, cada cambio en el enlace de la lista activará una nueva representación de toda la lista, incluido el campo de búsqueda.
 
 La agregación headerToolbar reemplaza la propiedad de título simple que usamos antes para nuestro encabezado de lista. Un control de barra de herramientas es mucho más flexible y se puede ajustar como desee. Ahora mostramos el título en el lado izquierdo con un control sap.m.Title, un espaciador y sap.m.SearchField en el lado derecho.
