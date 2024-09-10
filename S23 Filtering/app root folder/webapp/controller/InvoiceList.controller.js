@@ -13,27 +13,27 @@ sap.ui.define([
 
         onInit() {
 
-            // Se instancia modelo local con el tipo de moneda en formato json
-            const oViewModel = new JSONModel({ currency: "EUR" });
+// Se instancia modelo local con el tipo de moneda en formato json
+const oViewModel = new JSONModel({ currency: "EUR" });
 
-            // Se asigna modelo a la vista
-            this.getView().setModel(oViewModel, "view");
-        },
+// Se asigna modelo a la vista
+this.getView().setModel(oViewModel, "view"); },
 
-        // Begin insert
-		onFilterInvoices(oEvent) {
-            // build filter array
+// Begin insert
+	onFilterInvoices(oEvent) {
+
+// build filter array
 			const aFilter = [];
 			const sQuery = oEvent.getParameter("query");
 			if (sQuery) {
-                aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
+    aFilter.push(new Filter("ProductName", FilterOperator.Contains, sQuery));
 			}
             
-			// filter binding
+// filter binding
 			const oList = this.byId("invoiceList");
-			const oBinding = oList.getBinding("items");
-			oBinding.filter(aFilter);
-		}
+	
+		const oBinding = oList.getBinding("items");
+			oBinding.filter(aFilter);	}
         // End insert
     });
 });
