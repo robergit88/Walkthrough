@@ -3,6 +3,9 @@
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
     <List
+    <!-- begin insert -->
+        id="invoiceList"
+    <!-- end insert -->
         headerText="{i18n>invoiceListTitle}"
         class="sapUiResponsiveMargin"
         width="auto"
