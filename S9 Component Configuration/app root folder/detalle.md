@@ -2,12 +2,10 @@
 # Step 9: Component Configuration
 ********************************
 
-### Después de haber introducido las tres partes del concepto Modelo-Vista-Controlador (MVC), 
-llegamos a otro aspecto estructural importante de SAPUI5.
+### Después de haber introducido las tres partes del concepto Modelo-Vista-Controlador (MVC), llegamos a otro aspecto estructural importante de SAPUI5.
 
 
-### En este paso, encapsularemos todos los recursos de la interfaz de usuario en un componente 
-que es independiente de nuestro archivo index.html.
+### En este paso, encapsularemos todos los recursos de la interfaz de usuario en un componente que es independiente de nuestro archivo index.html.
 
 
 ### Los componentes son piezas independientes y reutilizables que se utilizan en aplicaciones SAPUI5.
@@ -17,8 +15,7 @@ que es independiente de nuestro archivo index.html.
 (en lugar de en relación con index.html).
 
 
-### Este cambio de arquitectura permite que nuestra aplicación se utilice en entornos más flexibles
-que nuestra página index.html estática, como en un contenedor circundante como la plataforma de lanzamiento de SAP Fiori.
+### Este cambio de arquitectura permite que nuestra aplicación se utilice en entornos más flexibles que nuestra página index.html estática, como en un contenedor circundante como la plataforma de lanzamiento de SAP Fiori.
  
 (sin cambios visuales en el último paso).
 
