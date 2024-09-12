@@ -33,8 +33,10 @@
 #### La sección de metadatos define una referencia a la vista raíz, de modo que en lugar de mostrar la vista raíz directamente en el archivo index.js como lo hicimos anteriormente, el componente ahora administra la visualización de la vista de la aplicación. También implementa la interfaz sap.ui.core.IAsyncContentCreation, que permite crear el componente de forma totalmente asíncrona.
 
 
-#### En la función init creamos una instancia de nuestro modelo de datos y el modelo i18n como lo hicimos antes en el controlador de la aplicación. 
-<u> Tenga en cuenta que los modelos se configuran directamente en el componente y no en la vista raíz del componente </u>.
+#### En la función init creamos una instancia de nuestro modelo de datos y el modelo i18n como lo hicimos antes en el controlador de la aplicación.
+
+
+<u>Tenga en cuenta que los modelos se configuran directamente en el componente y no en la vista raíz del componente</u>.
 
 
 Sin embargo, como los controles anidados heredan automáticamente los modelos de sus controles principales, los modelos también están disponibles en la vista.
