@@ -24,4 +24,6 @@
 
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
+### Se elimina la función onInit y los módulos requeridos; esto ahora se hace en el componente.
+
 3. Se modifica el fichero [index.js](webapp/index.js)
