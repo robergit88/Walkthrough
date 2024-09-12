@@ -34,7 +34,7 @@
 
 
 #### En la función init creamos una instancia de nuestro modelo de datos y el modelo i18n como lo hicimos antes en el controlador de la aplicación. 
-==Tenga en cuenta que los modelos se configuran directamente en el componente y no en la vista raíz del componente==. Sin embargo, como los controles anidados heredan automáticamente los modelos de sus controles principales, los modelos también están disponibles en la vista.
+**Tenga en cuenta que los modelos se configuran directamente en el componente y no en la vista raíz del componente**. Sin embargo, como los controles anidados heredan automáticamente los modelos de sus controles principales, los modelos también están disponibles en la vista.
 
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
