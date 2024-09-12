@@ -23,7 +23,11 @@
 1. Se crea el fichero [Component.js](webapp/Component.js)
 
 
-#### El archivo Component.js ahora consta de dos partes: la nueva sección de metadatos y la función init introducida anteriormente que se llama cuando se inicializa el componente.
+#### El archivo Component.js ahora consta de dos partes:
+
+
++ La nueva sección de metadatos
++ La función init introducida anteriormente que se llama cuando se inicializa el componente.
 
 
 #### La sección de metadatos define una referencia a la vista raíz, de modo que en lugar de mostrar la vista raíz directamente en el archivo index.js como lo hicimos anteriormente, el componente ahora administra la visualización de la vista de la aplicación. También implementa la interfaz sap.ui.core.IAsyncContentCreation, que permite crear el componente de forma totalmente asíncrona.
