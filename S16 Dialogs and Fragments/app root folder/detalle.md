@@ -26,12 +26,10 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 1. Se modifica el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
 
 
-#### Agregamos un nuevo botón a la vista para abrir el diálogo. 
+#### Agregamos un nuevo botón, con <ins>id="helloDialogButton"</ins>, sobre la vista para abrir el diálogo.
 
 
 #### Esto llama a una función definida en el controlador de la vista del panel.
-
-#### Necesitaremos el nuevo **id="helloDialogButton"**.
 
 
 #### Es una buena práctica establecer una identificación única, como helloWorldButton en los controles clave de su aplicación para que pueda identificarse fácilmente.
