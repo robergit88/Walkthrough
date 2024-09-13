@@ -31,7 +31,7 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 #### Agregamos un espacio de nombres xml dentro de la etiqueta FragmentDefinition.
 
 
-#### La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador, 
+#### La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador 
 falta este atributo.
 
 
