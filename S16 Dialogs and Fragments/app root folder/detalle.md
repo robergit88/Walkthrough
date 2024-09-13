@@ -34,8 +34,7 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 #### Necesitaremos el nuevo **id="helloDialogButton"**.
 
 
-#### Es una buena práctica establecer una identificación única, como helloWorldButton, 
-en los controles clave de su aplicación para que pueda identificarse fácilmente.
+#### Es una buena práctica establecer una identificación única, como helloWorldButton en los controles clave de su aplicación para que pueda identificarse fácilmente.
 
 
 #### Si no se especifica el atributo id, el tiempo de ejecución de OpenUI5 genera un ID único pero cambiante como "__button23" para el control.
