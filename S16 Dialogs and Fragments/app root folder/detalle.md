@@ -25,7 +25,19 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 
 1. Se modifica el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
 
-2. Se crea el fichero [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
+2. Se crea la vista fragmento [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
+
+
+#### Agregamos un espacio de nombres xml dentro de la etiqueta FragmentDefinition.
+
+
+#### La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador, 
+falta este atributo. Además, el fragmento no tiene ninguna huella en el árbol DOM de la aplicación y no existe una instancia de control del fragmento en sí (sólo los controles contenidos). 
+
+
+#### Es simplemente un contenedor para un conjunto de controles de reutilización.
+
+
 
 3. Se modifica el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
