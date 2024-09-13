@@ -5,12 +5,3 @@
       id="helloDialog"
       title="Hello {/recipient/name}"/>
 </core:FragmentDefinition>
-
-<!-- Agregamos un nuevo archivo XML para definir declarativamente nuestro diálogo en un fragmento. 
-Los activos del fragmento se encuentran en el espacio de nombres principal, por lo que agregamos 
-un espacio de nombres xml dentro de la etiqueta FragmentDefinition. -->
-
-<!-- La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador, 
-falta este atributo. Además, el fragmento no tiene ninguna huella en el árbol DOM de la aplicación y
- no existe una instancia de control del fragmento en sí (sólo los controles contenidos). 
- Es simplemente un contenedor para un conjunto de controles de reutilización. -->
