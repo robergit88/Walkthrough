@@ -25,6 +25,22 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 
 1. Se modifica el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
 
+
+#### Agregamos un nuevo botón a la vista para abrir el diálogo. 
+
+
+#### Esto llama a una función definida en el controlador de la vista del panel.
+
+#### Necesitaremos el nuevo ** id="helloDialogButton" **.
+
+
+#### Es una buena práctica establecer una identificación única, como helloWorldButton, 
+en los controles clave de su aplicación para que pueda identificarse fácilmente.
+
+
+#### Si no se especifica el atributo id, el tiempo de ejecución de OpenUI5 genera un ID único pero cambiante como "__button23" para el control. Inspeccione los elementos DOM de su aplicación en el navegador para ver la diferencia.
+
+
 2. Se crea la vista fragmento [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
 
 
