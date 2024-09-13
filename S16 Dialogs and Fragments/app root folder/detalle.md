@@ -32,7 +32,10 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 
 
 #### La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador, 
-falta este atributo. Además, el fragmento no tiene ninguna huella en el árbol DOM de la aplicación y no existe una instancia de control del fragmento en sí (sólo los controles contenidos). 
+falta este atributo.
+
+
+#### Además, el fragmento no tiene ninguna huella en el árbol DOM de la aplicación y no existe una instancia de control del fragmento en sí (sólo los controles contenidos). 
 
 
 #### Es simplemente un contenedor para un conjunto de controles de reutilización.
