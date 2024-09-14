@@ -5,6 +5,8 @@
 En este paso, agregamos un campo de búsqueda para nuestra lista de productos y definimos un filtro que representa el término de búsqueda. Al realizar una búsqueda, la lista se actualiza automáticamente para mostrar solo los artículos que coinciden con el término de búsqueda.
 
 
+[![App Platorm](https://doimages.nyc3.cdn.digitaloceanspaces.com/002Blog/0-BLOG-BANNERS/app_platform.png)](https://www.digitalocean.com/products/app-platform)
+
 
 ![alt text](image.png)
 
