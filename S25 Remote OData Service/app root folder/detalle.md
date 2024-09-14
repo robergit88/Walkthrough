@@ -21,19 +21,29 @@ Agregaremos una configuración de fuente de datos en el fichero manifiesto y ree
 Los productos del servicio de prueba de facturas de OData ahora se muestran dentro de nuestra aplicación
 
 ### Instalar servidor proxy
-En este paso, queremos utilizar el servicio Northwind OData disponible públicamente ubicado en https://services.odata.org/V2/Northwind/Northwind.svc/. 
+En este paso, queremos utilizar el servicio Northwind OData disponible públicamente ubicado en 
+
+
+[https://services.odata.org/V2/Northwind/Northwind.svc/](https://services.odata.org/V2/Northwind/Northwind.svc/)
 
 
 Por lo tanto, nuestro URI apuntará al servicio oficial Northwind OData. Para evitar el intercambio de recursos entre orígenes, el procedimiento típico es utilizar un proxy en UI5 Tooling y mantener solo una ruta en la propiedad URI de la fuente de datos de nuestra aplicación.
 
 Hay un montón de soluciones de proxy disponibles en la comunidad UI5 como extensiones de middleware personalizadas de herramientas UI5. 
 
-En este tutorial usaremos ui5-middleware-simpleproxyInformación publicada en un sitio que no es de SAP. 
+
+En este tutorial usaremos _ui5-middleware-simpleproxy_
 
 
-Abra una nueva ventana de terminal en la carpeta raíz de su aplicación y ejecute **npm i -D ui5-middleware-simpleproxy** para instalar este paquete como una nueva dependencia de desarrollo en su [package.json](package.json).
+Abra una nueva ventana de terminal en la carpeta raíz de su aplicación y ejecute 
 
 
+_**npm i -D ui5-middleware-simpleproxy**_
+
+para instalar este paquete como una nueva dependencia de desarrollo en su [package.json](package.json).
+
+
+1. Se modifica el fichero [UI5.yaml](./UI5.yaml)
 ### UI5.yaml
 ``` yaml
 
@@ -60,7 +70,7 @@ server:
 El archivo de configuración ui5.yaml se generó automáticamente en la carpeta raíz de la aplicación durante el Paso 1 de este tutorial cuando ejecutamos el comando init ui5. Ahora configuramos nuestro proxy en el archivo ui5.yaml. La propiedad mountPath configura qué URL serán capturadas por el proxy. La propiedad de configuración/baseUri almacena la dirección real del servidor.
 
 
-1. Se modifica el ficher [manifiesto](webapp/manifest.json)
+2. Se modifica el fichero [manifiesto](webapp/manifest.json)
 
 ``` json
 {
