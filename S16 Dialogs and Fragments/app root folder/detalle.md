@@ -56,4 +56,20 @@ Es simplemente un contenedor para un conjunto de controles de reutilización.
 
 3. Se modifica el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
+
+Usando async/await, manejamos la apertura del diálogo de forma asincrónica cada vez que se activa el evento.
+
+
+Si el fragmento de diálogo aún no existe, se crea una instancia del fragmento llamando a la API loadFragment. Luego almacenamos el cuadro de diálogo en la instancia del controlador. 
+Esto nos permite reutilizar el diálogo cada vez que se activa el evento.
+
+
+TIP
+Para reutilizar la funcionalidad de apertura y cierre de diálogos en otros controladores, 
+puede crear un nuevo archivo ui5.walkthrough.controller.BaseController, 
+que extiende sap.ui.core.mvc.Controller, y colocar toda la codificación relacionada 
+con los diálogos en este controlador. Ahora, todos los demás controladores pueden extenderse 
+desde ui5.walkthrough.controller.BaseController en lugar de sap.ui.core.mvc.Controller.
+
+
 4. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
