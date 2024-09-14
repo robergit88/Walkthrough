@@ -15,7 +15,7 @@ Agregaremos una configuración de fuente de datos en el fichero manifiesto y ree
 
 > Si no puede ejecutarlo, no se preocupe demasiado, los pasos restantes también funcionarán con los datos JSON locales que ha utilizado hasta ahora. En el Paso 26: Configuración simulada del servidor, aprenderá cómo simular un sistema back-end para lograr un escenario de trabajo similar. Sin embargo, al menos debería leer este capítulo sobre servicios remotos de OData para conocer las fuentes de datos no locales.
 
-![una_imagen](webapp/img/capa.png)
+![una_imagen](webapp/img/remoteOData.png)
 
 Los productos del servicio de prueba de facturas de OData ahora se muestran dentro de nuestra aplicación
 
