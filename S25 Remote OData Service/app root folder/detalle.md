@@ -72,10 +72,10 @@ server:
 El archivo de configuración ui5.yaml se generó automáticamente en la carpeta raíz de la aplicación durante el Paso 1 de este tutorial cuando ejecutamos el comando init ui5. Ahora configuramos nuestro proxy en el archivo ui5.yaml. 
 
 
-La propiedad _mountPath_ configura qué URL serán capturadas por el proxy.
+La propiedad <ins>mountPath</ins> configura qué URL serán capturadas por el proxy.
 
 
-La propiedad _baseUri_ almacena la dirección real del servidor.
+La propiedad <ins>baseUri</ins> almacena la dirección real del servidor.
 
 
 2. Se modifica el fichero [manifiesto](webapp/manifest.json)
