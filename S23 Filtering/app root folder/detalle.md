@@ -4,13 +4,18 @@
 
 En este paso, agregamos un campo de búsqueda para nuestra lista de productos y definimos un filtro que representa el término de búsqueda. Al realizar una búsqueda, la lista se actualiza automáticamente para mostrar solo los artículos que coinciden con el término de búsqueda.
 
+
+<img src="image.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
+
 ![alt text](image.png)
 
 
 Se muestra un campo de búsqueda encima de la lista.
 
 1. Se modifica fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml).
-<<<<<<< HEAD
 
 
 La vista se amplía con un control de búsqueda que agregamos a la lista de facturas. También necesitamos especificar un ID invoiceList para que el control de lista pueda identificar la lista a partir de la función del controlador de eventos onFilterInvoices que agregamos al campo de búsqueda. Además, el campo de búsqueda es parte del encabezado de la lista y, por lo tanto, cada cambio en el enlace de la lista activará una nueva representación de toda la lista, incluido el campo de búsqueda.
