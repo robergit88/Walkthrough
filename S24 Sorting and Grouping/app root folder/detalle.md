@@ -4,7 +4,7 @@
 
 Para que nuestra lista de facturas sea aún más fácil de usar, la ordenamos alfabéticamente en lugar de mostrar solo el orden del modelo de datos. Además, introducimos grupos y agregamos la empresa que envía los productos para que los datos sean más fáciles de consumir.
 
-![mierda](./img/capa.png).
+![mierda](webapp/img/capa.png)
 
 La lista ahora está ordenada y agrupada por empresa de envío.
 
@@ -62,3 +62,5 @@ Modificamos la vista y añadimos un clasificador diferente, o mejor aún, cambia
 
 
 Al igual que con el clasificador, no se requiere ninguna acción adicional. La lista y las funciones de enlace de datos de SAPUI5 harán el trabajo de mostrar los encabezados de grupo automáticamente y categorizar los artículos en los grupos. Podríamos definir una fábrica de encabezados de grupo personalizada si quisiéramos configurando la propiedad groupHeaderFactory, pero el resultado ya parece correcto.
+
+[def]: /webapp/img/capa.png
