@@ -26,31 +26,31 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 1. Se modifica el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
 
 
-#### Agregamos un nuevo botón, con <ins>id="helloDialogButton"</ins>, sobre la vista para abrir el diálogo.
+Agregamos un nuevo botón, con <ins>id="helloDialogButton"</ins>, sobre la vista para abrir el diálogo.
 
 
-#### Esto llama a una función definida en el controlador de la vista del panel.
+Esto llama a una función definida en el controlador de la vista del panel.
 
 
-#### Es una buena práctica establecer una identificación única, como helloWorldButton en los controles clave de su aplicación para que pueda identificarse fácilmente.
+Es una buena práctica establecer una identificación única, como helloWorldButton en los controles clave de su aplicación para que pueda identificarse fácilmente.
 
 
-#### Si no se especifica el atributo id, el tiempo de ejecución de OpenUI5 genera un ID único pero cambiante como "__button23" para el control.
+Si no se especifica el atributo id, el tiempo de ejecución de OpenUI5 genera un ID único pero cambiante como "__button23" para el control.
 
 
 2. Se crea la vista fragmento [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
 
 
-#### Agregamos un espacio de nombres xml dentro de la etiqueta FragmentDefinition.
+Agregamos un espacio de nombres xml dentro de la etiqueta FragmentDefinition.
 
 
-#### La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador falta este atributo.
+La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador falta este atributo.
 
 
-#### Además, el fragmento no tiene ninguna huella en el árbol DOM de la aplicación y no existe una instancia de control del fragmento en sí (sólo los controles contenidos). 
+Además, el fragmento no tiene ninguna huella en el árbol DOM de la aplicación y no existe una instancia de control del fragmento en sí (sólo los controles contenidos). 
 
 
-#### Es simplemente un contenedor para un conjunto de controles de reutilización.
+Es simplemente un contenedor para un conjunto de controles de reutilización.
 
 
 
