@@ -32,7 +32,9 @@ Por lo tanto, nuestro URI apuntará al servicio oficial Northwind OData. Para ev
 Hay un montón de soluciones de proxy disponibles en la comunidad UI5 como extensiones de middleware personalizadas de herramientas UI5. 
 
 
-En este tutorial usaremos _ui5-middleware-simpleproxy_
+En este tutorial usaremos
+
+ _ui5-middleware-simpleproxy_
 
 
 Abra una nueva ventana de terminal en la carpeta raíz de su aplicación y ejecute 
@@ -64,10 +66,16 @@ server:
      afterMiddleware: compression    
      mountPath: /V2    
      configuration:      
-         baseUri: "https://services.odata.org"
+       baseUri: "https://services.odata.org"
 ```
 
-El archivo de configuración ui5.yaml se generó automáticamente en la carpeta raíz de la aplicación durante el Paso 1 de este tutorial cuando ejecutamos el comando init ui5. Ahora configuramos nuestro proxy en el archivo ui5.yaml. La propiedad mountPath configura qué URL serán capturadas por el proxy. La propiedad de configuración/baseUri almacena la dirección real del servidor.
+El archivo de configuración ui5.yaml se generó automáticamente en la carpeta raíz de la aplicación durante el Paso 1 de este tutorial cuando ejecutamos el comando init ui5. Ahora configuramos nuestro proxy en el archivo ui5.yaml. 
+
+
+La propiedad _mountPath_ configura qué URL serán capturadas por el proxy.
+
+
+La propiedad _baseUri_ almacena la dirección real del servidor.
 
 
 2. Se modifica el fichero [manifiesto](webapp/manifest.json)
