@@ -4,6 +4,7 @@
 
 Para que nuestra lista de facturas sea aún más fácil de usar, la ordenamos alfabéticamente en lugar de mostrar solo el orden del modelo de datos. Además, introducimos grupos y agregamos la empresa que envía los productos para que los datos sean más fáciles de consumir.
 
+![mierda](./img/capa.png).
 
 La lista ahora está ordenada y agrupada por empresa de envío.
 
