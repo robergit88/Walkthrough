@@ -36,7 +36,6 @@ Si la consulta no está vacía, agregamos un nuevo objeto de filtro a la matriz 
 
 
 Se accede a la lista con el ID que hemos especificado en la vista, ya que el control tiene automáticamente como prefijo el ID de la vista, por lo que debemos solicitar a la vista el control con la función auxiliar byId. En el control de lista, accedemos a la vinculación de los elementos de agregación para filtrarlo con nuestro objeto de filtro recién construido. Esto filtrará automáticamente la lista por nuestra cadena de búsqueda de modo que solo se muestren los elementos coincidentes cuando se active la búsqueda. El operador de filtro FilterOperator.Contains no distingue entre mayúsculas y minúsculas.
-=======
 
 
 La vista se amplía con un control de búsqueda que agregamos a la lista de facturas. 
