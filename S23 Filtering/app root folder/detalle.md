@@ -87,4 +87,3 @@ Esto filtrará automáticamente la lista por nuestra cadena de búsqueda de modo
 
 
 El operador de filtro **FilterOperator**.Contains no distingue entre mayúsculas y minúsculas.
->>>>>>> 892bfb15d8092f78738ac90b44fa78103cf13c75
