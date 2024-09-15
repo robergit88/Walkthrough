@@ -10,9 +10,6 @@ En este paso, agregamos un campo de búsqueda para nuestra lista de productos y 
      style="float: left; margin-right: 10px;" />
 
 
-![alt text](image.png)
-
-
 Se muestra un campo de búsqueda encima de la lista.
 
 1. Se modifica fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml).
