@@ -1,0 +1,23 @@
+<mvc:View
+	controllerName="ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+	<Shell>
+		<App class="myAppDemoWT">
+			<pages>
+				<Page title="{i18n>homePageTitle}">
+					<content>
+						<!-- Una vista dentro de otra vista. -->
+						<mvc:XMLView viewName="ui5.walkthrough.view.HelloPanel"/>
+						<!-- otra vista anidada de facturas. -->
+						<mvc:XMLView viewName="ui5.walkthrough.view.InvoiceList"/>						
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
+
+<!-- En la vista de la aplicación agregamos una segunda vista para mostrar nuestras facturas 
+debajo del panel. -->
