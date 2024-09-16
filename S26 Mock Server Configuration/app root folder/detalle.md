@@ -80,6 +80,7 @@ sap.ui.define([
 
 La primera dependencia es un archivo llamado mockserver.js que se ubicará más adelante en la carpeta localService.
 
+
 La dependencia del servidor simulado que estamos a punto de implementar es nuestro servidor de prueba local. Su método init se llama inmediatamente antes de cargar el componente. De esta manera, podemos capturar todas las solicitudes que irían al servicio "real" y procesarlas localmente en nuestro servidor de prueba al iniciar la aplicación con el archivo mockServer.html. El componente en sí no "sabe" que ahora se ejecutará en modo de prueba.
 
 
@@ -130,6 +131,7 @@ La dependencia del servidor simulado que estamos a punto de implementar es nuest
   ]
 ```
 
+
 El archivo Invoices.json es similar a nuestro archivo anterior en la carpeta webapp. Simplemente copie el contenido y elimine la estructura del objeto externo con las facturas clave para que el archivo consista en una matriz plana de elementos de factura. Nuestro servidor leerá automáticamente este archivo más adelante en este paso.
 
 
@@ -171,7 +173,9 @@ Elimine el antiguo archivo Invoices.json de la carpeta de la aplicación web; ya
 
 ```
 
+
 El archivo de metadatos contiene información sobre la interfaz del servicio y no es necesario escribirlo manualmente. Se puede acceder directamente desde el servicio "real" llamando a la URL del servicio y agregando $metadata al final (por ejemplo, en nuestro caso http://services.odata.org/V2/Northwind/Northwind.svc/$metadata). El servidor simulado leerá este archivo para simular el servicio OData real y devolverá los resultados de nuestros archivos fuente locales en el formato adecuado para que la aplicación pueda consumirlos (ya sea en formato XML o JSON).
+
 
 Para simplificar, hemos eliminado todo el contenido del documento de metadatos original de Northwind OData que no necesitamos en nuestro escenario. También agregamos el campo de estado a los metadatos ya que no está disponible en el servicio real de Northwind.
 
@@ -214,15 +218,21 @@ sap.ui.define([
 
 Ahora que hemos agregado el archivo de descripción del servicio OData metadata.xml, podemos escribir el código para inicializar el servidor simulado que luego simulará cualquier solicitud de OData al servidor Northwind real.
 
+
 Cargamos el módulo estándar SAPUI5 MockServer como una dependencia y creamos un objeto auxiliar que define un método init para iniciar el servidor. Este método se llama antes de la inicialización del componente en el archivo mockServer.html anterior. El método init crea una instancia de MockServer con la misma URL que las llamadas al servicio real.
+
 
 La URL en el parámetro de configuración rootUri debe apuntar a la misma URL definida en la propiedad uri de la fuente de datos en el archivo descriptor manifest.json. En manifest.json, UI5 interpreta automáticamente una URL relativa como relativa al espacio de nombres de la aplicación. En el código JavaScript, puede garantizar esto utilizando el método sap.ui.require.toUrl. Luego, sap/ui/core/util/MockServer detecta cada solicitud al servicio real y devuelve una respuesta. A continuación, establecemos dos ajustes de configuración global que le indican al servidor que responda automáticamente e introducen un retraso de 500 ms para simular un tiempo de respuesta típico del servidor. De lo contrario, tendríamos que llamar manualmente al método de respuesta en MockServer para simular la llamada.
 
+
 Para simular un servicio, simplemente podemos llamar al método de simulación en la instancia de MockServer con la ruta a nuestro metadata.xml recién creado. Esto leerá los datos de prueba de nuestro sistema de archivos local y configurará los patrones de URL que imitarán el servicio real.
+
 
 Finalmente, llamamos a iniciar en oMockServer. A partir de este punto, MockServer procesará cada solicitud al patrón de URL rootUri. Si cambia del archivo index.html al archivo mockServer.html en el navegador, ahora podrá ver que los datos de prueba se muestran nuevamente desde las fuentes locales, pero con un breve retraso. El retraso se puede especificar con el parámetro URI serverDelay.
 
+
 Este enfoque es perfecto para pruebas locales, incluso sin conexión de red. De esta manera su desarrollo no depende de la disponibilidad de un servidor remoto, es decir. para ejecutar sus pruebas.
+
 
 Intente llamar a la aplicación con el archivo index.html y el archivo mockServer.html para ver la diferencia. Si no se puede establecer la conexión de servicio real, por ejemplo cuando no hay conexión de red, siempre puede recurrir a la página de prueba local.
 
@@ -248,7 +258,9 @@ Para facilitar el desarrollo local, ajustamos el script de inicio en package.jso
 }
 ```
 
+
 ## Convenciones
+
 
 - La carpeta webapp/test contiene únicamente código no productivo.
 
