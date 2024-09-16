@@ -2,12 +2,14 @@
     controllerName="ui5.walkthrough.controller.InvoiceList"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc">
+
     <List
         id="invoiceList"
         headerText="{i18n>invoiceListTitle}"
         class="sapUiResponsiveMargin"
         width="auto"
         items="{invoice>/Invoices}">
+
     <!-- begin insert     -->
     <headerToolbar>
          <Toolbar>
@@ -19,6 +21,7 @@
          </Toolbar>
       </headerToolbar>        
     <!-- end insert     -->
+
         <items>
             <ObjectListItem
                 title="{invoice>Quantity} x {invoice>ProductName}"
