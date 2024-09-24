@@ -3,20 +3,22 @@
 <head>
 	<title>Unit tests for UI5 Walkthrough</title>
 	<meta charset="utf-8">
-
+	
+	<base href="../../">
 	<script
 		id="sap-ui-bootstrap"
-		src="../../resources/sap-ui-core.js"
-		data-sap-ui-resource-roots='{ "webapp": "../../" }'
+		src="http://sdk.openui5.org/resources/sap-ui-core.js"
+		data-sap-ui-resource-roots='{ "/webapp/test/unit/model/": "./" }'
 		data-sap-ui-async="true">
 	</script>
 
-	<link rel="stylesheet" type="text/css" href="../../resources/sap/ui/thirdparty/qunit-2.css">
+	<link rel="stylesheet" type="text/css" href="http://sdk.openui5.org/resources/sap/ui/thirdparty/qunit-2.css">
 
-	<script src="../../resources/sap/ui/thirdparty/qunit-2.js"></script>
-	<script src="../../resources/sap/ui/qunit/qunit-junit.js"></script>
+	<script src="http://sdk.openui5.org/resources/sap/ui/thirdparty/qunit-2.js"></script>
+	<script src="http://sdk.openui5.org/resources/sap/ui/qunit/qunit-junit.js"></script>
 
-	<script src="unitTests.qunit.js"></script>
+	<!-- <script src="/unit/model/unitTests.qunit.js"></script> -->
+	<script src="/test/unit/model/unitTests.qunit.js"></script>
 </head>
 
 <body>
