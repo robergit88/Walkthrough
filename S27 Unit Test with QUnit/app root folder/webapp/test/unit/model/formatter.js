@@ -1,5 +1,6 @@
 sap.ui.define([
-	"webapp/test/unit/model/formatter",
+	// "/webapp/test/unit/model/formatter",
+	"ui5/walkthrough/model/formatter",
 	"sap/ui/model/resource/ResourceModel"], 
     (formatter, ResourceModel) => {
 	"use strict";
@@ -9,7 +10,7 @@ sap.ui.define([
 	QUnit.test("Should return the translated texts", (assert) => {
         
         const oResourceModel = new ResourceModel({
-            bundleUrl: sap.ui.require.toUrl("webapp/i18n/i18n.properties"),
+            bundleUrl: sap.ui.require.toUrl("ui5/walkthrough/i18n/i18n.properties"),
             supportedLocales: [""],
             fallbackLocale: "" });
 
