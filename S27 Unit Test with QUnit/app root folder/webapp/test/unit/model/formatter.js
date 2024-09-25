@@ -1,6 +1,6 @@
 sap.ui.define([
-	// "/webapp/test/unit/model/formatter",
-	"ui5/walkthrough/model/formatter",
+	"formatter",
+	// "ui5/walkthrough/model/formatter",
 	"sap/ui/model/resource/ResourceModel"], 
     (formatter, ResourceModel) => {
 	"use strict";

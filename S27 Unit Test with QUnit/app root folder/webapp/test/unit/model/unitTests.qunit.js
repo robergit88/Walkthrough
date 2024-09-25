@@ -8,7 +8,6 @@ sap.ui.require(["sap/ui/core/Core"], async (Core) => {
 	await Core.ready();
 
 	sap.ui.require([
-		"ui5/walkthrough/test/unit/model/formatter"
-		// "/webapp/test/unit/model/formatter"
+		"formatter"
 	], () => QUnit.start());
 });
