@@ -21,7 +21,3 @@
       </content>
    </Panel>
 </mvc:View>
-
-<!-- Todo el contenido del panel ahora se agrega al nuevo archivo HelloPanel.view.xml. 
-También especificamos el controlador de la vista configurando el atributo nombre del controlador 
-de la vista XML. -->
