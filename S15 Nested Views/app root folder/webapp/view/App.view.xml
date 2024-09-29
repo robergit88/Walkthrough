@@ -16,7 +16,3 @@
 		</App>
 	</Shell>
 </mvc:View>
-
-<!-- En lugar de colocar el panel y su contenido directamente en nuestra vista de aplicación, 
-lo moveremos a una nueva vista separada de HelloPanel. 
-Nos referimos a esto usando una etiqueta XMLView en la agregación de contenido del panel. -->
