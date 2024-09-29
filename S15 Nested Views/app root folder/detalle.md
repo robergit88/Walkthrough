@@ -44,6 +44,9 @@ Nos referimos a esto usando una etiqueta XMLView en la agregación de contenido 
 
 2. Se crea el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
 
+Todo el contenido del panel ahora se agrega al nuevo archivo HelloPanel.view.xml. 
+También especificamos el controlador de la vista configurando el atributo nombre del controlador de la vista XML. 
+
 3. Se crea el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
 3. Se modifica el fichero [webapp/controller/App.controller.js](webapp/controller/App.controller.js)
