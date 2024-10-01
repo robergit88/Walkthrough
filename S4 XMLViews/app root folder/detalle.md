@@ -47,7 +47,7 @@ Si desarrolla su propio código o controles de aplicación, no puede utilizar el
 En su lugar, simplemente defina su propio espacio de nombres único (por ejemplo, myCompany.myApp).
 
 
-2. Se modifica Index.js
+2. Se modifica [webapp/index.js](webapp/Index)
 
 
 Reemplazamos la creación de instancias del control sap/m/Text por nuestro nuevo archivo App.view.xml.
