@@ -5,8 +5,8 @@
 Antes de que podamos hacer algo con SAPUI5, debemos cargar e inicializar la aplicación.
 
 
-Este proceso se llama bootstrapping o arranque.
-
+Este proceso se llama arranque o
+bootstrapping.
 
 Una vez finalizado este arranque, simplemente mostramos una alerta.
 
