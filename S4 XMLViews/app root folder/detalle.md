@@ -72,7 +72,6 @@ El nombre tiene el prefijo del espacio de nombres ui5.walkthrough.view para iden
 
 
 ## Convenciones:
--------------
 * Los nombres de las vistas están en mayúscula.
 
 * Todas las vistas se almacenan en la carpeta de vistas.
