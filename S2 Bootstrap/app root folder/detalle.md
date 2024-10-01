@@ -35,6 +35,33 @@ data-sap-ui-libs="sap.m" data-sap-ui-compat-version="edge" data-sap-ui-async="tr
 ```
 
 
+En este paso, cargamos el marco SAPUI5 desde el servidor web proporcionado por UI5 Tooling 
+e inicializamos los módulos principales con las siguientes opciones de configuración:
+
+
+El atributo id de la etiqueta <script> debe ser exactamente "sap-ui-bootstrap" 
+para garantizar el inicio adecuado del tiempo de ejecución de SAPUI5.
+
+Los controles SAPUI5 admiten diferentes temas. 
+Elegimos sap_horizon como nuestro tema predeterminado.
+
+Especificamos la biblioteca de UI requerida sap.m, que contiene los controles de UI que necesitamos para este tutorial.
+
+Para hacer uso de la funcionalidad más reciente de SAPUI5, 
+definimos la versión de compatibilidad como edge.
+
+Configuramos el proceso de arranque para que se ejecute de forma asíncrona. 
+Esto significa que los recursos SAPUI5 se pueden cargar simultáneamente en segundo plano 
+por motivos de rendimiento.
+
+Definimos el módulo a cargar inicialmente de forma declarativa. 
+Con esto evitamos el código JavaScript directamente ejecutable en el archivo HTML. 
+Esto hace que su aplicación sea más segura. 
+Crearemos el script al que esto hace referencia más adelante en este paso.
+
+Le decimos al núcleo de SAPUI5 que los recursos en el espacio de nombres ui5.walkthrough 
+se encuentran en la misma carpeta que index.html.
+
 2. Se crea el fichero [webapp/index.js](webapp/index.js)
 
 ``` js
