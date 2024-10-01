@@ -34,11 +34,13 @@ data-sap-ui-libs="sap.m"
 data-sap-ui-compat-version="edge" 
 
 data-sap-ui-async="true"
+
                 data-sap-ui-on-init="module:ui5/walkthrough/index" 
 
 data-sap-ui-resource-roots='{
  "ui5.walkthrough": "./" }'>
- </script>
+
+</script>
 
 </head>
 
