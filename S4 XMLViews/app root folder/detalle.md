@@ -49,6 +49,18 @@ En su lugar, simplemente defina su propio espacio de nombres único (por ejemplo
 
 2. Se modifica [/webapp/index.js](./webapp/index.js)
 
+``` js
+sap.ui.define([
+    "sap/ui/core/mvc/XMLView"
+], (XMLView) => {
+    "use strict";
+
+XMLView.create({
+ viewName: "ui5.walkthrough.view.App"
+    }).then((oView) => oView.placeAt("content"));
+});
+```
+
 
 Reemplazamos la creación de instancias del control sap/m/Text por nuestro nuevo archivo App.view.xml.
 
