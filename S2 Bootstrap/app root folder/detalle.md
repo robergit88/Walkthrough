@@ -22,7 +22,8 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 
  <title>UI5 Walkthrough</title>
 
-  <script
+ <script
+
 id="sap-ui-bootstrap" 
 
 src="resources/sap-ui-core.js"       
@@ -35,7 +36,10 @@ data-sap-ui-compat-version="edge"
 
 data-sap-ui-async="true"
 
-                data-sap-ui-on-init="module:ui5/walkthrough/index" 
+   
+data-sap-ui-on-init=
+
+"module:ui5/walkthrough/index" 
 
 data-sap-ui-resource-roots='{
  "ui5.walkthrough": "./" }'>
