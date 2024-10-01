@@ -62,6 +62,7 @@ Crearemos el script al que esto hace referencia más adelante en este paso.
 Le decimos al núcleo de SAPUI5 que los recursos en el espacio de nombres ui5.walkthrough 
 se encuentran en la misma carpeta que index.html.
 
+
 2. Se crea el fichero [webapp/index.js](webapp/index.js)
 
 ``` js
