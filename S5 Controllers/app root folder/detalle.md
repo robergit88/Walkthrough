@@ -23,18 +23,13 @@ Tenemos que especificar el nombre del controlador que está conectado a la vista
 contiene la función .onShowHello configurando el atributo controladorName de la vista.
 
 
-Añadimos una referencia al controlador y reemplazamos el control de texto con un botón 
-con el texto "say Hello".
+Añadimos un botón con el texto "say Hello".
 
 
 El botón activa la función de controlador de eventos .onShowHello cuando se presiona.
 
 
-El nombre del controlador es una combinación del espacio de nombres de su aplicación
- seguido del nombre real del controlador.
-
-
-También lo usaremos en el siguiente paso al definir el controlador.
+El nombre del controlador es una combinación del espacio de nombres de su aplicación seguido del nombre real del controlador.
 
 
 Una vista no necesariamente necesita de un controlador asignado a ella. 
@@ -44,6 +39,7 @@ Si se especifica un controlador, se crea una instancia de él después de cargar
 
 
 El manejo del evento clik del botón se implementa en el controlador de la vista.
+
 
 2. Se crea carpeta 📂 y fichero [webapp/controller/App.controller.js](webapp/controller/App.controller.js)
 
