@@ -15,8 +15,33 @@ En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola m
    <Button
       text="Say Hello"
       press=".onShowHello"/>
+
 </mvc:View>
 ```
+
+Tenemos que especificar el nombre del controlador que está conectado a la vista y 
+contiene la función .onShowHello configurando el atributo controladorName de la vista.
+
+
+Añadimos una referencia al controlador y reemplazamos el control de texto con un botón 
+con el texto "say Hello".
+
+
+El botón activa la función de controlador de eventos .onShowHello cuando se presiona.
+
+
+El nombre del controlador es una combinación del espacio de nombres de su aplicación
+ seguido del nombre real del controlador.
+
+
+También lo usaremos en el siguiente paso al definir el controlador.
+
+
+Una vista no necesariamente necesita de un controlador asignado a ella. 
+Si la vista solo muestra información y no se requiere ninguna funcionalidad adicional, 
+entonces no es necesario crear un controlador. 
+Si se especifica un controlador, se crea una instancia de él después de cargar la vista.
+
 
 El manejo del evento clik del botón se implementa en el controlador de la vista.
 
