@@ -19,7 +19,7 @@ En este paso, reemplazamos el texto con un botón y cuando se presione el botón
 </mvc:View>
 ```
 
-Tenemos que especificar el nombre del controlador que está conectado a la vista  configurando el atributo *controllerName* de la vista.
+Tenemos que especificar el nombre del controlador que está conectado a la vista  configurando el atributo **controllerName** de la vista.
 
 
 Añadimos un botón con el texto "say Hello".
