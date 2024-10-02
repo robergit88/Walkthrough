@@ -58,6 +58,12 @@ sap.ui.define([
 ```
 
 
+Definimos el controlador de la aplicación en su propio archivo extendiendo el archivo sap/ui/core/mvc/Controller proporcionado por UI5.
+
+
+Al principio, contiene solo una función llamada **onShowHello** que maneja el evento de pulsación del botón mostrando una alerta.
+
+
 ### Convenciones:
 1. #### Los nombres de los controladores deben ser capitalizados.
 2. #### Los controladores llevan el mismo nombre que la vista relacionada (si hay una relación 1:1).
