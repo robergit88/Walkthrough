@@ -2,8 +2,7 @@
 # Step 5: Controllers
 ********************
 
-En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola mundo" cuando se presiona el botón.
-
+En este paso, reemplazamos el texto con un botón y cuando se presione el botón mostraremos el mensaje "Hola mundo".
 
 1. Se modifica la vista [webapp/view/App.view.xml](webapp/view/App.view.xml)
 
@@ -12,6 +11,7 @@ En este paso, reemplazamos el texto con un botón y mostramos el mensaje "Hola m
    controllerName="ui5.walkthrough.controller.App"
    xmlns="sap.m"
    xmlns:mvc="sap.ui.core.mvc">
+
    <Button
       text="Say Hello"
       press=".onShowHello"/>
