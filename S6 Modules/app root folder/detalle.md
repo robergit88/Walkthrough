@@ -29,7 +29,7 @@ MessageToast.show("Hello World from message toast module");
 ```
 
 
-Ampliamos la gama de módulos necesarios con la ruta completa a sap/m/MessageToast.
+Ampliamos la lista de módulos necesarios con la ruta completa a sap/m/MessageToast.
 
 
 Una vez cargados ambos módulos, *Controller* y *MessageToast*, se llama a la función de devolución de llamada y podemos hacer uso de ambos objetos accediendo a los parámetros pasados a la función.
@@ -43,6 +43,12 @@ El navegador puede decidir cuándo y cómo se cargan los recursos antes de la ej
 
 
 ### Convenciones
+
+
 1. #### Utilice sap.ui.define para controladores y todos los demás módulos de JavaScript para definir un espacio de nombres global. Con el espacio de nombres, se puede abordar el objeto en toda la aplicación.
+
+
 2. #### Utilice sap.ui.require para cargar dependencias de forma asincrónica pero sin declarar un espacio de nombres, por ejemplo, código que solo necesita ejecutarse, pero no necesita ser llamado desde otro código.
+
+
 3. #### Utilice el nombre del artefacto a cargar para nombrar los parámetros de la función (sin espacio de nombres).
