@@ -6,7 +6,9 @@ sap.ui.define([
    "use strict";
 
    return Controller.extend("ui5.walkthrough.controller.App", {
-      onInit() {
+      
+
+onInit() {
          // set data model on view
          const oData = {
             recipient : {
@@ -17,7 +19,9 @@ sap.ui.define([
          this.getView().setModel(oModel);
       },
 
-      onShowHello() {
+      
+
+onShowHello() {
          MessageToast.show("Hello World");
       }
    });
