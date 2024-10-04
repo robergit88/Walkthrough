@@ -9,12 +9,15 @@ sap.ui.define([
       
 
 onInit() {
-         // set data model on view
+
+         //se define una estructura en js
          const oData = {
             recipient : {
                name : "World from oData model"
             }
          };
+
+        // set data model on view
          const oModel = new JSONModel(oData);
          this.getView().setModel(oModel);
       },
