@@ -46,18 +46,28 @@ Ahora se muestran los controles de los pasos anteriores sobre un panel.
    </App>
 </mvc:View>
 ```
-Colocamos tanto el campo de entrada como el botón dentro de un control contenedor llamado sap/m/Page.
+Colocamos el campo de entrada y el botón dentro de un control contenedor llamado <ins>sap/m/Page</ins>.
+
+
 La página proporciona una agregación de 0..N otros controles llamados contenido. 
-También muestra el atributo de título en una sección de encabezado encima del contenido. 
+
+
+También muestra el atributo de título en una sección de encabezado encima del contenido.
+
+
 La página en sí se coloca en la agregación de páginas de otro control llamado sap/m/App que hace las siguientes cosas importantes para nosotros: 
 
-Escribe un montón de propiedades en el encabezado de index.html que son necesarias para una visualización adecuada en dispositivos móviles.
+1. Escribe un montón de propiedades en el encabezado de index.html que son necesarias para una visualización adecuada en dispositivos móviles.
 
-Ofrece funcionalidad para navegar entre páginas con animaciones. Usaremos esto pronto.
 
-Para que la altura de pantalla completa de la vista funcione correctamente,
+2. Ofrece funcionalidad para navegar entre páginas con animaciones. Usaremos esto pronto.
+
+
+3. Para que la altura de pantalla completa de la vista funcione correctamente,
 agregamos el atributo displayBlock con el valor verdadero a la vista. 
-El contenido real se incluye dentro de un control del Panel para agrupar el contenido relacionado.
+
+
+4. El contenido real se incluye dentro de un control del Panel para agrupar el contenido relacionado.
 
  
 2. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
