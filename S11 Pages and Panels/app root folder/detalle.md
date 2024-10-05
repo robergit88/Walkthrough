@@ -26,7 +26,7 @@ Ahora se muestran los controles de los pasos anteriores sobre un panel.
    <App>
       <pages>
          <Page title="{i18n>homePageTitle}">
-            <content>`#000000`
+            <content>
                <Panel
                   headerText="{i18n>helloPanelTitle}">
                   <content>
@@ -49,7 +49,7 @@ Ahora se muestran los controles de los pasos anteriores sobre un panel.
 Se coloca el campo de entrada y el botón dentro de un control contenedor llamado <ins>sap/m/Page</ins>.
 
 
-La página proporciona una agregación de 0..N otros controles llamado 
+`#000000La página proporciona` una agregación de 0..N otros controles llamado 
 **content**. 
 
 
