@@ -46,10 +46,12 @@ de modelos como nuestro paquete de recursos i18n.
 <body class="sapUiBody" id="content"> </body>
 
 <!-- Begin insert -->
+
 <div data-sap-ui-component data-name="ui5.walkthrough" 
-     data-id="container" 
-         data-settings='{"id" : "walkthrough"}'>
+data-id="container" 
+data-settings='{"id" : "walkthrough"}'>
 </div>
+
 <!-- End insert -->
 
 </html>
