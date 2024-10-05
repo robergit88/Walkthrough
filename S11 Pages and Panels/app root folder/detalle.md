@@ -26,7 +26,7 @@ Ahora se muestran los controles de los pasos anteriores sobre un panel.
    <App>
       <pages>
          <Page title="{i18n>homePageTitle}">
-            <content>
+            <content>`#000000`
                <Panel
                   headerText="{i18n>helloPanelTitle}">
                   <content>
