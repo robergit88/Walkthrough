@@ -73,6 +73,7 @@ agregamos el atributo displayBlock con el valor verdadero a la vista.
  
 2. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 
+Agregamos nuevos pares clave/valor a nuestro paquete de texto para el título de la página de inicio y el título del panel.
 
 ``` js
 # App Descriptor
@@ -84,7 +85,4 @@ showHelloButtonText=Say Hello
 helloMsg=Hello {0}
 homePageTitle=Walkthrough a 
 helloPanelTitle=Hello World
-
-# Agregamos nuevos pares clave/valor a nuestro paquete de texto para el título de la página de inicio y 
-# el título del panel.
 ```
