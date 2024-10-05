@@ -59,8 +59,58 @@ data-settings='{"id" : "walkthrough"}'>
 
 
 3. Se elimina fichero index.js, porque el descriptor ahora se encarga de todo.
+
+
 4. Se modifica fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+
+
 5. Se modifica fichero [Component.js](webapp/Component.js)
+
+
+``` js
+sap.ui.define([
+   "sap/ui/core/UIComponent",
+   "sap/ui/model/json/JSONModel"
+], (UIComponent, JSONModel) => {
+   "use strict";
+
+   return UIComponent.extend("ui5.walkthrough.Component", {
+
+// Se configuran metadatos de la aplicacion.
+// En la sección de metadatos del componente, ahora reemplazamos la propiedad rootView con el manifiesto
+
+
+// Esto define una referencia al descriptor que 
+// se cargará y analizará automáticamente
+// cuando se cree una instancia del componente.      
+     
+
+metadata : {
+         interfaces: ["sap.ui.core.IAsyncContentCreation"],
+         manifest: "json"
+      },
+
+      init() {
+
+// Se llama a la función init de la clase padre
+UIComponent.prototype.init.apply(this, arguments);
+
+         // se define un modelo de datos local
+         const oData = {
+            recipient : {
+               name : "World" }
+         };
+
+// Se instancia un modelo de datos en el componente
+         const oModel = new JSONModel(oData);
+         this.setModel(oModel);
+      }
+   });
+});
+
+```
+
+
 
 El contenido del archivo manifest.json es un objeto de configuración en formato JSON que contiene todas las configuraciones y parámetros globales de la aplicación.
 El archivo de manifiesto se denomina descriptor de aplicaciones, componentes y bibliotecas y 
