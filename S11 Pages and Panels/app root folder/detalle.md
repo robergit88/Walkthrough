@@ -46,13 +46,13 @@ Ahora se muestran los controles de los pasos anteriores sobre un panel.
    </App>
 </mvc:View>
 ```
-Colocamos el campo de entrada y el botón dentro de un control contenedor llamado <ins>sap/m/Page</ins>.
+Se coloca el campo de entrada y el botón dentro de un control contenedor llamado <ins>sap/m/Page</ins>.
 
 
-La página proporciona una agregación de 0..N otros controles llamados contenido. 
+La página proporciona una agregación de 0..N otros controles llamados **<content>**. 
 
 
-También muestra el atributo de título en una sección de encabezado encima del contenido.
+También se muestra el título encima del **<content>**.
 
 
 La página en sí se coloca en la agregación de páginas de otro control llamado sap/m/App que hace las siguientes cosas importantes para nosotros: 
