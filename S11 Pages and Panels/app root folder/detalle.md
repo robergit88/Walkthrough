@@ -1,6 +1,8 @@
 **************************
 # Step 11: Pages and Panels
 **************************
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
+
 
 Después de todo el trabajo en la estructura de la aplicación, es hora de mejorar el aspecto de
 nuestra aplicación.
