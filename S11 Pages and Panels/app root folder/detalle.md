@@ -49,7 +49,8 @@ Ahora se muestran los controles de los pasos anteriores sobre un panel.
 Se coloca el campo de entrada y el botón dentro de un control contenedor llamado <ins>sap/m/Page</ins>.
 
 
-La página proporciona una agregación de 0..N otros controles llamados **<content>**. 
+La página proporciona una agregación de 0..N otros controles llamado 
+**<content>**. 
 
 
 También se muestra el título encima del **<content>**.
