@@ -50,10 +50,10 @@ Se coloca el campo de entrada y el botón dentro de un control contenedor llamad
 
 
 La página proporciona una agregación de 0..N otros controles llamado 
-**<content>**. 
+**content**. 
 
 
-También se muestra el título encima del **<content>**.
+También se muestra el título encima del **content**.
 
 
 La página en sí se coloca en la agregación de páginas de otro control llamado sap/m/App que hace las siguientes cosas importantes para nosotros: 
