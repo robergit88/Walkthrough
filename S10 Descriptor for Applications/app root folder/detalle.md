@@ -15,6 +15,8 @@ Y también podemos usar el archivo descriptor para cargar recursos adicionales y
 de modelos como nuestro paquete de recursos i18n.
 
 1. Se crea fichero [manifest.json](webapp/manifest.json)
+
+
 2. Se modifica [index.html](webapp/index.html)
 
 ``` XML
@@ -56,6 +58,11 @@ data-settings='{"id" : "walkthrough"}'>
 
 </html>
 ```
+
+Ahora declaramos nuestro componente en el cuerpo de nuestro index.html. 
+En el script de arranque de nuestro index.html, habilitamos el módulo ComponentSupport. 
+Luego, declaramos nuestro componente en el cuerpo mediante una etiqueta div. 
+Esto creará una instancia del componente cuando se ejecute el evento onInit.
 
 
 3. Se elimina fichero index.js, porque el descriptor ahora se encarga de todo.
