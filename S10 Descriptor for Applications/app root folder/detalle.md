@@ -16,6 +16,46 @@ de modelos como nuestro paquete de recursos i18n.
 
 1. Se crea fichero [manifest.json](webapp/manifest.json)
 2. Se modifica [index.html](webapp/index.html)
+
+``` XML
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="utf-8">
+        <title>UI5 Walkthrough</title>
+
+        <!-- Begin insert -->
+        <!-- data-sap-ui-on-init="module:sap/ui/core/ComponentSupport" -->
+        <!-- End insert -->
+        <script 
+            id="sap-ui-bootstrap" 
+            src="resources/sap-ui-core.js" 
+                data-sap-ui-theme="sap_horizon"
+                data-sap-ui-libs="sap.m" 
+                data-sap-ui-compat-version="edge" 
+                data-sap-ui-async="true"
+                data-sap-ui-on-init="module:sap/ui/core/ComponentSupport" 
+                data-sap-ui-on-init="module:ui5/walkthrough/index"
+                data-sap-ui-resource-roots='{"ui5.walkthrough": "./"}'>
+                </script>
+</head>
+
+<!--La clase sapUiBody agrega estilos adicionales dependientes del tema para mostrar aplicaciones SAPUI5.-->
+
+<body class="sapUiBody" id="content"> </body>
+
+<!-- Begin insert -->
+<div data-sap-ui-component data-name="ui5.walkthrough" 
+     data-id="container" 
+         data-settings='{"id" : "walkthrough"}'>
+</div>
+<!-- End insert -->
+
+</html>
+```
+
+
 3. Se elimina fichero index.js, porque el descriptor ahora se encarga de todo.
 4. Se modifica fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 5. Se modifica fichero [Component.js](webapp/Component.js)
