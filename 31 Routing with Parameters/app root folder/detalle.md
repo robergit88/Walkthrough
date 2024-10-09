@@ -13,7 +13,7 @@ Los detalles de la factura seleccionada ahora se muestran en la página de detal
 
 ## Código
 
-1. Se modifica fichero [webapp/manifest.json](webapp/manifest.json)
+1. Se modifica [webapp/manifest.json](webapp/manifest.json)
 
 
 ``` json
@@ -59,7 +59,7 @@ Los detalles de la factura seleccionada ahora se muestran en la página de detal
 > <mark>"pattern": "detail/{invoicePath}"</mark>
 
 
-Agregamos un parámetro de navegación invoicePath a la ruta de detalles para que podamos pasar la información del artículo seleccionado a la página de detalles. Los parámetros de navegación obligatorios se definen entre llaves.
+Agregamos un parámetro de navegación **invoicePath** a la ruta de detalles para que podamos pasar la información del artículo seleccionado a la página de detalles. Los parámetros de navegación obligatorios se definen entre llaves.
 
 
 2. Se modifica fichero [webapp/view/Detail.view.xml](webapp/view/Detail.view.xml)
@@ -114,9 +114,16 @@ sap.ui.define([
 
 <mark>oRouter.navTo</mark>
 
-Se puede acceder a la instancia de control con la que se ha interactuado mediante el método getSource, que está disponible para todos los eventos de SAPUI5. Devolverá el **ObjectListItem** en el que se ha hecho clic en nuestro caso. Lo utilizaremos para pasar la información del elemento en el que se ha hecho clic a la página de detalles para que el mismo elemento se pueda mostrar allí.
 
-En el método **navTo**, ahora agregamos un objeto de configuración para completar el parámetro de navegación **invoicePath** con la información actual del elemento. Esto actualizará la URL y navegará a la vista de detalles al mismo tiempo. En la página de detalles, podemos acceder nuevamente a esta información de contexto y mostrar el elemento correspondiente.
+Se puede acceder a la instancia de control con la que se ha interactuado mediante el método **getSource**, que está disponible para todos los eventos de SAPUI5. 
+
+
+Devolverá el **ObjectListItem** en el que se ha hecho clic en nuestro caso. Lo utilizaremos para pasar la información del elemento en el que se ha hecho clic a la página de detalles para que el mismo elemento se pueda mostrar allí.
+
+En el método **navTo**, ahora agregamos un objeto de configuración para completar el parámetro de navegación **invoicePath** con la información actual del elemento. 
+
+
+Esto actualizará la URL y navegará a la vista de detalles al mismo tiempo. En la página de detalles, podemos acceder nuevamente a esta información de contexto y mostrar el elemento correspondiente.
 
 Para identificar el objeto que seleccionamos, normalmente utilizaríamos la clave del elemento en el sistema de back-end porque es breve y precisa. Sin embargo, para nuestras facturas, no tenemos una clave simple y utilizamos directamente la ruta de enlace para mantener el ejemplo breve y simple. La ruta al elemento es parte del contexto de enlace, que es un objeto auxiliar de SAPUI5 para administrar la información de enlace para los controles. Se puede acceder al contexto de enlace llamando al método **getBindingContext** con el nombre del modelo en cualquier control SAPUI5 enlazado. 
 Necesitamos eliminar la primera / de la ruta de enlace llamando a .substr(1) en la cadena porque este es un carácter especial en las URL y no está permitido; lo agregaremos nuevamente en la página de detalles. Además, la ruta de enlace puede contener caracteres especiales que no están permitidos en las URL, por lo que debemos codificar la ruta con **encodeURIComponent**.
@@ -133,6 +140,7 @@ sap.ui.define([
 
 	return Controller.extend("ui5.walkthrough.controller.Detail", {
 		onInit() {
+      
 			const oRouter = this.getOwnerComponent().getRouter();
 			      oRouter.getRoute("detail").attachPatternMatched(this.onObjectMatched, this);
 		},
