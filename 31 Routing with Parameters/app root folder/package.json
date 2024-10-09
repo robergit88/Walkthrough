@@ -1,0 +1,12 @@
+{
+    "name": "ui5.walkthrough",
+    "version": "1.0.0",
+    "description": "The UI5 walkthrough application",
+    "scripts": {
+        "start": "ui5 serve -o  test/mockServer.html"
+    },
+    "devDependencies": {
+        "@ui5/cli": "^4.0.8",
+        "ui5-middleware-simpleproxy": "^3.3.0"
+    }
+}
