@@ -85,3 +85,57 @@ sap.ui.define([
 
 
 3. Se modifica el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
+
+``` xml
+<mvc:View
+    controllerName="ui5.walkthrough.controller.InvoiceList"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc">
+    <List
+        headerText="{i18n>invoiceListTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{invoice>/Invoices}">
+        <items>
+            <ObjectListItem
+                title="{invoice>Quantity} x {invoice>ProductName}"
+                number="{
+                    parts: [
+                        'invoice>ExtendedPrice',
+                        'view>/currency'
+                    ],
+                    type: 'sap.ui.model.type.Currency',
+                    formatOptions: {
+                        showMeasure: false
+                    }
+                }"
+                numberUnit="{view>/currency}"
+                numberState="{= ${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }">
+                <firstStatus>
+                    <ObjectStatus
+                        text="{
+                            path: 'invoice>Status',
+                            formatter: '.formatter.statusText'
+                        }"/>
+                </firstStatus>
+            </ObjectListItem>
+        </items>
+    </List>
+</mvc:View>
+```
+
+
+
+Agregamos un estado mediante la agregación firstStatus a nuestro ObjectListItem 
+que mostrará el estado de nuestra factura.
+
+
+La función de formateador personalizada se especifica con la propiedad reservada formatter de la sintaxis de enlace. 
+
+
+Un "." delante del nombre del formateador significa que la función se busca en el controlador de la vista actual. 
+
+
+
+Allí definimos una propiedad formatter que contiene nuestras funciones de formateador,
+por lo que podemos acceder a ella mediante .formatter.statusText.
