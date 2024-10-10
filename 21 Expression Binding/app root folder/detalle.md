@@ -10,6 +10,37 @@ El precio ahora está formateado según su número.
 
 1. Se modifica el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
 
+``` XML
+<mvc:View
+controllerName="ui5.walkthrough.controller.InvoiceList"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+         <ObjectListItem
+
+            title="{invoice>Quantity} x {invoice>ProductName}"
+
+            number="{
+                    parts: [ 'invoice>ExtendedPrice',
+                             'view>/currency'],
+                    type: 'sap.ui.model.type.Currency',
+                    formatOptions: { showMeasure: false } }"
+
+           numberUnit="{view>/currency}"
+           numberState="{= ${invoice>ExtendedPrice} > 7 ? 'Error' : 'Success' }"/>
+
+      </items>
+   </List>
+</mvc:View>
+```
+
+
+
 Agregamos la propiedad numberState en nuestra vista declarativa e 
 introducimos una nueva sintaxis vinculante que comienza con = dentro de los corchetes.
 Este símbolo se utiliza para iniciar una nueva sintaxis de enlace, se llama expresión y 
