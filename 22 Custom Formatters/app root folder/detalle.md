@@ -12,6 +12,29 @@ Ahora se muestra un estado con un formateador personalizado
 
 1. Se crea carpeta y función javascript [webapp/model/formatter.js](webapp/model/formatter.js)
 
+``` js
+sap.ui.define([], () => {
+        "use strict";
+
+        return {
+                statusText(sStatus) {
+                        const oResourceBundle = this.getOwnerComponent().getModel("i18n").getResourceBundle();
+                        switch (sStatus) {
+                                case "A":
+                                        return oResourceBundle.getText("invoiceStatusA");
+                                case "B":
+                                        return oResourceBundle.getText("invoiceStatusB");
+                                case "C":
+                                        return oResourceBundle.getText("invoiceStatusC");
+                                default:
+                                        return sStatus;
+                        }
+                }
+        };
+});
+```
+
+
 Creamos un carpeta de nombre modelo en nuestro proyecto.
 El nuevo archivo formateador se añade sobre la carpeta modelo, porque los formateadores trabajan con las propiedades de los datos y les dan formato para mostrarlos en la interfaz de usuario.
 
