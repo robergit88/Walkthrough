@@ -60,7 +60,9 @@ Las expresiones se limitan a un conjunto particular de operaciones que ayudan
 a formatear los datos, como expresiones matemáticas, comparaciones, etc.
 
 
-Convenciones
+### Convenciones
+
+
 Utilice únicamente el enlace de expresión para cálculos triviales.
 
 
@@ -103,6 +105,6 @@ para vincular propiedades como la visibilidad.
 
 
 ### Convenciones
--------------
+
 
 Utilice tipos de datos en lugar de formateadores personalizados siempre que sea posible.
