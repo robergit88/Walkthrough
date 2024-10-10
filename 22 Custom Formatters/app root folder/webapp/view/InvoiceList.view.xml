@@ -33,11 +33,3 @@
         </items>
     </List>
 </mvc:View>
-
-<!-- Agregamos un estado mediante la agregación firstStatus a nuestro ObjectListItem 
-que mostrará el estado de nuestra factura. 
-La función de formateador personalizada se especifica con la propiedad 
-reservada formatter de la sintaxis de enlace. Un "." delante del nombre 
-del formateador significa que la función se busca en el controlador de la vista actual. 
-Allí definimos una propiedad formatter que contiene nuestras funciones de formateador,
-por lo que podemos acceder a ella mediante .formatter.statusText. -->
