@@ -39,6 +39,7 @@ controllerName="ui5.walkthrough.controller.InvoiceList"
 </mvc:View>
 ```
 
+<mark>numberState</mark>
 
 
 Agregamos la propiedad **numberState** en nuestra vista e introducimos una nueva sintaxis vinculante que comienza con = dentro de los corchetes.
