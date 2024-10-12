@@ -104,6 +104,39 @@ Es simplemente un contenedor para un conjunto de controles de reutilización.
 3. Se modifica el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
 
+``` js
+sap.ui.define([
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast"
+ ], (Controller, MessageToast) => {
+    "use strict";
+
+    return Controller.extend("ui5.walkthrough.controller.HelloPanel", {
+
+onShowHello() {
+
+// read msg from i18n model
+const oBundle = this.getView().getModel("i18n").getResourceBundle();
+
+const sRecipient = this.getView().getModel().getProperty("/recipient/name");
+
+const sMsg = oBundle.getText("helloMsg", [sRecipient]);
+
+// show message
+   MessageToast.show(sMsg); },
+
+async onOpenDialog() {
+
+// create dialog lazily
+this.oDialog ??= await this.loadFragment({
+             name: "ui5.walkthrough.view.HelloDialog" });
+
+ this.oDialog.open(); }
+
+    });
+ });
+```
+
 Usando async/await, manejamos la apertura del diálogo de forma asincrónica cada vez que se activa el evento.
 
 
