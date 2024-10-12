@@ -63,7 +63,6 @@ contiene el diálogo. Después de todo, un cuadro de diálogo se puede utilizar 
 ```
 
 
-
 Agregamos un nuevo botón, con <mark>"helloDialogButton"</mark>, sobre la vista para abrir el diálogo.
 
 
@@ -79,7 +78,17 @@ Si no se especifica el atributo id, el tiempo de ejecución de OpenUI5 genera un
 2. Se crea la vista fragmento [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
 
 
-Agregamos un espacio de nombres xml dentro de la etiqueta FragmentDefinition.
+``` XML
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog
+      id="helloDialog"
+      title="Hello {/recipient/name}"/>
+</core:FragmentDefinition>
+```
+
+Agregamos un espacio de nombres xml dentro de la etiqueta **FragmentDefinition**.
 
 
 La sintaxis es similar a una vista, pero como los fragmentos no tienen un controlador falta este atributo.
