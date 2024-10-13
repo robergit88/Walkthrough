@@ -41,17 +41,15 @@ SAPUI5 trabaja con una fuente de íconos que contiene más de 500 entradas.
 </mvc:View>
 ```
 
-Se configura un icono (pequeño) para el botón helloDialogButton
+Se configura un icono (pequeño) para el botón <mark>helloDialogButton</mark>
 
 
-El protocolo sap-icon:// indica que se debe cargar un ícono de la fuente del ícono. 
+El protocolo **sap-icon://** indica que se debe cargar un ícono de la fuente del ícono. 
 El mundo del identificador es el nombre legible del ícono en la fuente del ícono.
 
 
-
 Para llamar a cualquier ícono, use su nombre tal como aparece en el Explorador de íconos en 
-sap-icon://<iconname>.
-
+**sap-icon://<iconname>**.
 
 
 2. Se modifica el fichero [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
@@ -78,3 +76,14 @@ sap-icon://<iconname>.
 </core:FragmentDefinition>
 
 ```
+
+En el fragmento de diálogo, agregamos un control de icono (grande) como contenido del diálogo. 
+Afortunadamente, la fuente del ícono también viene con un ícono de “Hello World” 
+que es perfecto para nosotros aquí. También definimos el tamaño del icono y le establecemos 
+un margen medio. -->
+
+##convenciones
+
+- Utilice siempre fuentes de iconos en lugar de imágenes siempre que sea posible, 
+ya que son escalables sin pérdida de calidad (gráficos vectoriales) 
+y no es necesario cargarlos por separado.
