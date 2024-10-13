@@ -31,6 +31,11 @@ Comenzamos a explorar más funciones del enlace de datos agregando algunos datos
 }]
 }
 ```
+El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON que podemos usar para vincular controles contra ellas en la aplicación.
+
+
+**JSON** es un formato muy liviano para almacenar datos y puede usarse directamente como fuente de datos para aplicaciones SAPUI5.
+
 
 
 2. Se modifica el fichero [webapp/manifest.json](webapp/manifest.json)
