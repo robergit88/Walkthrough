@@ -68,13 +68,16 @@ El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON
 <mark>invoice</mark>
 
 
-Agregamos un nuevo modelo de factura a la sección **sap.ui5** del descriptor. Esta vez queremos un JSONModel, por lo que configuramos el tipo en sap.ui.model.json.JSONModel. 
+Agregamos un nuevo modelo de factura a la sección **sap.ui5** del descriptor. Esta vez queremos un **JSONModel**, por lo que configuramos el tipo en **sap.ui.model.json.JSONModel.** 
 
 
-La clave uri es la ruta a nuestros datos relacionados con el componente. Con esta pequeña configuración, nuestro componente creará automáticamente una instancia de un nuevo JSONModel que carga los datos de la factura desde el archivo Invoices.json.
+La clave **uri** es la ruta a nuestros datos relacionados con el componente. 
 
 
-Finalmente, el JSONModel instanciado se coloca en el componente como una factura modelo con nombre. El modelo nombrado luego es visible en toda nuestra aplicación.
+Con esta pequeña configuración, nuestro componente creará automáticamente una instancia de un nuevo **JSONModel** que carga los datos de la factura desde el archivo Invoices.json.
+
+
+Finalmente, el **JSONModel** instanciado se coloca en el componente como una factura modelo con nombre. El modelo nombrado luego es visible en toda nuestra aplicación.
 
 
 
