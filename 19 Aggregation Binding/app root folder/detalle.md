@@ -12,23 +12,23 @@ Comenzamos a explorar más funciones del enlace de datos agregando algunos datos
 
 ``` json
 {
-    "Invoices": [
-        {
-            "ProductName": "Pineapple",
-            "Quantity": 21,
-            "ExtendedPrice": 87.2,
-            "ShipperName": "Fun Inc.",
-            "ShippedDate": "2015-04-01T00:00:00",
-            "Status": "A"
-        },
-        {
-            "ProductName": "Milk",
-            "Quantity": 4,
-            "ExtendedPrice": 10,
-            "ShipperName": "ACME",
-            "ShippedDate": "2015-02-18T00:00:00",
-            "Status": "B"
-        }]
+"Invoices": [
+{
+"ProductName": "Pineapple",
+"Quantity": 21,
+"ExtendedPrice": 87.2,
+"ShipperName": "Fun Inc.",
+"ShippedDate": "2015-04-01T00:00:00",
+"Status": "A"
+},
+{
+"ProductName": "Milk",
+"Quantity": 4,
+"ExtendedPrice": 10,
+"ShipperName": "ACME",
+"ShippedDate": "2015-02-18T00:00:00",
+"Status": "B"
+}]
 }
 ```
 
