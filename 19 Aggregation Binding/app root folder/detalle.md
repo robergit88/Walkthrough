@@ -113,6 +113,11 @@ Finalmente, el **JSONModel** instanciado se coloca en el componente como una fac
 </mvc:View>
 ```
 
+<mark>viewName="ui5.walkthrough.view.InvoiceList"</mark>
+
+
+En la vista de la aplicación agregamos una segunda vista para mostrar nuestras facturas debajo del panel.
+
 
 
 4. Se crea el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
