@@ -99,14 +99,9 @@ displayBlock="true">
                             class="sapUiResponsiveMargin" width="auto">
 <content>
 <mvc:XMLView                              
-
-
 viewName="ui5.walkthrough.view.HelloPanel"/>
 
 <mvc:XMLView                                   
-
-
-
 viewName="ui5.walkthrough.view.InvoiceList"/>
                             </content>
                         </Panel>
