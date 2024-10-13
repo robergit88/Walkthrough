@@ -151,7 +151,7 @@ Más precisamente, utilizamos **sap/m/ObjectListItem** para crear un control par
 5. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 
 
-``` js
+``` json
 # App Descriptor
 appTitle=Hello World
 appDescription=A simple walkthrough app that explains the most important concepts of SAPUI5
