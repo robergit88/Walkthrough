@@ -140,4 +140,7 @@ En la vista de la aplicación agregamos una segunda vista para mostrar nuestras 
 ```
 
 
+La nueva vista muestra un control tipo lista con un texto de encabezado. La agregación de elementos de la lista está vinculada a la ruta raíz **Invoices** de los datos **JSON**. Y dado que definimos un modelo con nombre, tenemos que anteponer a cada definición el identificador **invoice**.
+
+
 5. Se crea el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
