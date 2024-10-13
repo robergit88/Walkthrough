@@ -85,23 +85,24 @@ Finalmente, el **JSONModel** instanciado se coloca en el componente como una fac
 
 ```xml
 <mvc:View
-	controllerName="ui5.walkthrough.controller.App"
-	xmlns="sap.m"
-	xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true">
-    <Shell>
-        <App class="myAppDemoWT">
-            <pages>
-                <Page title="{i18n>homePageTitle}">
-                    <content>
-                        <Panel
+controllerName="ui5.walkthrough.controller.App
+xmlns="sap.m"
+xmlns:mvc="sap.ui.core.mvc"
+displayBlock="true">
+<Shell>
+<App class="myAppDemoWT">
+<pages>
+ <Page title="{i18n>homePageTitle}">
+  <content>
+   <Panel
                             headerText="{i18n>helloPanelTitle}"
                             class="sapUiResponsiveMargin"
-                            width="auto">
-                            <content>
-                                <mvc:XMLView
+     width="auto">
+ <content>
+ <mvc:XMLView
                                     viewName="ui5.walkthrough.view.HelloPanel"/>
-                                <mvc:XMLView
+
+<mvc:XMLView
                                     viewName="ui5.walkthrough.view.InvoiceList"/>
                             </content>
                         </Panel>
