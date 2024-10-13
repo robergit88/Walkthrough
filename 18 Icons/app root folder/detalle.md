@@ -55,3 +55,26 @@ sap-icon://<iconname>.
 
 
 2. Se modifica el fichero [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
+
+```xml
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core" >
+   <Dialog
+      id="helloDialog"
+      title ="Hello {/recipient/name}">
+      <content>
+         <core:Icon
+            src="sap-icon://hello-world"
+            size="8rem"
+            class="sapUiMediumMargin"/>
+      </content>
+      <beginButton>
+         <Button
+            text="{i18n>dialogCloseButtonText}"
+            press=".onCloseDialog"/>
+      </beginButton>
+   </Dialog>
+</core:FragmentDefinition>
+
+```
