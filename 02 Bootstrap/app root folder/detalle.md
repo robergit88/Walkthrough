@@ -15,28 +15,17 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 ``` XML
 <!DOCTYPE html>
 <html>
-
 <head>
-
  <meta charset="utf-8">
-
  <title>UI5 Walkthrough</title>
 
  <script
-
 id="sap-ui-bootstrap" 
-
 src="resources/sap-ui-core.js"       
-
 data-sap-ui-theme="sap_horizon"
-
 data-sap-ui-libs="sap.m" 
-
 data-sap-ui-compat-version="edge" 
-
 data-sap-ui-async="true"
-
-   
 data-sap-ui-on-init=
 
 "module:ui5/walkthrough/index" 
