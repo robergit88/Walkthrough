@@ -148,4 +148,24 @@ Para los artículos definimos la plantilla para el listado que se repetirá auto
 
 Más precisamente, utilizamos **sap/m/ObjectListItem** para crear un control para cada elemento secundario agregado de la agregación de elementos. La propiedad del título del elemento de la lista está vinculada a las propiedades de una única factura. Esto se logra definiendo una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado la agregación de artículos mediante **items={invoice>/Invoices}** a las facturas.
 
-5. Se crea el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+5. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+
+
+```json
+# App Descriptor
+appTitle=Hello World
+appDescription=A simple walkthrough app that explains the most important concepts of SAPUI5
+
+# Hello Panel
+showHelloButtonText=Say Hello
+helloMsg=Hello {0}
+homePageTitle=Walkthrough
+helloPanelTitle=Hello World
+openDialogButtonText=Say Hello With Dialog
+dialogCloseButtonText=Ok
+
+# Invoice List
+invoiceListTitle=Invoices
+```
+
+<mark>invoiceListTitle=Invoices</mark>
