@@ -143,6 +143,9 @@ En la vista de la aplicación agregamos una segunda vista para mostrar nuestras 
 La nueva vista muestra un control tipo **List** con un texto de encabezado. La agregación de elementos de la lista está vinculada a la ruta raíz **Invoices** de los datos **JSON**. Y dado que definimos un modelo con nombre, tenemos que anteponer a cada definición el identificador **invoice**.
 
 
-En la agregación de artículos definimos la plantilla de la lista que se repetirá automáticamente para cada factura de nuestros datos de prueba. Más precisamente, utilizamos sap/m/ObjectListItem para crear un control para cada elemento secundario agregado de la agregación de elementos. La propiedad del título del elemento de la lista está vinculada a las propiedades de una única factura. Esto se logra definiendo una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado la agregación de artículos mediante items={invoice>/Invoices} a las facturas.
+Para los artículos definimos la plantilla para el listado que se repetirá automáticamente para cada factura de nuestros datos de prueba. 
+
+
+Más precisamente, utilizamos **sap/m/ObjectListItem** para crear un control para cada elemento secundario agregado de la agregación de elementos. La propiedad del título del elemento de la lista está vinculada a las propiedades de una única factura. Esto se logra definiendo una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado la agregación de artículos mediante **items={invoice>/Invoices}** a las facturas.
 
 5. Se crea el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
