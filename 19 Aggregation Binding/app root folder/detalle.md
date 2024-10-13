@@ -5,7 +5,7 @@
 Ahora que tenemos una buena estructura para nuestra aplicación, es hora de agregar más funciones.
 
 
-#### Comenzamos a explorar más funciones del enlace de datos agregando algunos datos de factura en formato JSON que mostramos en una lista debajo del panel.
+Comenzamos a explorar más funciones del enlace de datos agregando algunos datos de factura en formato **JSON** que mostramos en una lista debajo del panel.
 
 
 1. Se crea el fichero [webapp/Invoices.json](webapp/Invoices.json)
