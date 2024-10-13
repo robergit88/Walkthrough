@@ -122,4 +122,22 @@ En la vista de la aplicación agregamos una segunda vista para mostrar nuestras 
 
 4. Se crea el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
 
+```xml
+<mvc:View
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+         <ObjectListItem
+            title="{invoice>Quantity} x {invoice>ProductName}"/>
+      </items>
+   </List>
+</mvc:View>
+```
+
+
 5. Se crea el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
