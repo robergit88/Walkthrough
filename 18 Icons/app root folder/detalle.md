@@ -44,7 +44,7 @@ En el botón <mark>helloDialogButton</mark> se configura un icono (pequeño)
 
 
 El protocolo **sap-icon://** indica que se debe cargar un ícono de la fuente del ícono. 
-El mundo del identificador es el nombre legible del ícono en la fuente del ícono.
+El identificador **world** es el nombre del ícono en el repositorio de íconos.
 
 
 Para llamar a cualquier ícono, use su nombre tal como aparece en el Explorador de íconos en 
