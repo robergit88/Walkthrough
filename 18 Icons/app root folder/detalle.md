@@ -40,8 +40,7 @@ SAPUI5 trabaja con una fuente de íconos que contiene más de 500 entradas.
    </Panel>
 </mvc:View>
 ```
-
-Se configura un icono (pequeño) para el botón <mark>helloDialogButton</mark>
+En el botón <mark>helloDialogButton</mark> se configura un icono pequeño
 
 
 El protocolo **sap-icon://** indica que se debe cargar un ícono de la fuente del ícono. 
