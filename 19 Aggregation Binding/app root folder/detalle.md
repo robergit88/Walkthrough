@@ -28,7 +28,7 @@ Comenzamos a explorar más funciones del enlace de datos agregando algunos datos
             "ShipperName": "ACME",
             "ShippedDate": "2015-02-18T00:00:00",
             "Status": "B"
-        }
+        }]
 }
 ```
 
