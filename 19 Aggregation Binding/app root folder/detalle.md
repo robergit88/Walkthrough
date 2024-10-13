@@ -68,7 +68,7 @@ El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON
 <mark>invoice</mark>
 
 
-Agregamos un nuevo modelo de factura a la sección **sap.ui5** del descriptor. Esta vez queremos un **JSONModel**, por lo que configuramos el tipo en **sap.ui.model.json.JSONModel.** 
+Agregamos un nuevo modelo **invoice** a la sección **sap.ui5** del descriptor. Esta vez queremos un **JSONModel**, por lo que configuramos el tipo en **sap.ui.model.json.JSONModel.** 
 
 
 La clave **uri** es la ruta a nuestros datos relacionados con el componente. 
@@ -82,6 +82,38 @@ Finalmente, el **JSONModel** instanciado se coloca en el componente como una fac
 
 
 3. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
+
+```xml
+<mvc:View
+	controllerName="ui5.walkthrough.controller.App"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true">
+    <Shell>
+        <App class="myAppDemoWT">
+            <pages>
+                <Page title="{i18n>homePageTitle}">
+                    <content>
+                        <Panel
+                            headerText="{i18n>helloPanelTitle}"
+                            class="sapUiResponsiveMargin"
+                            width="auto">
+                            <content>
+                                <mvc:XMLView
+                                    viewName="ui5.walkthrough.view.HelloPanel"/>
+                                <mvc:XMLView
+                                    viewName="ui5.walkthrough.view.InvoiceList"/>
+                            </content>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
+```
+
+
 
 4. Se crea el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
 
