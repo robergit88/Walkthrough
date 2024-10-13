@@ -40,6 +40,33 @@ El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON
 
 2. Se modifica el fichero [webapp/manifest.json](webapp/manifest.json)
 
+```json
+{
+  ...
+  "sap.ui5": {
+    ...
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ui5.walkthrough.i18n.i18n",
+          "supportedLocales": [
+            ""
+          ],
+          "fallbackLocale": ""
+        }
+      },
+      "invoice": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Invoices.json"
+      }
+    }
+  }
+  ...
+}
+```
+
+
 3. Se modifica el fichero [webapp/view/App.view.xml](webapp/view/App.view.xml)
 
 4. Se crea el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
