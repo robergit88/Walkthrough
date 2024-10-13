@@ -96,10 +96,9 @@ displayBlock="true">
   <content>
    <Panel
                             headerText="{i18n>helloPanelTitle}"
-                            class="sapUiResponsiveMargin"
-     width="auto">
- <content>
- <mvc:XMLView
+                            class="sapUiResponsiveMargin" width="auto">
+<content>
+<mvc:XMLView
                                     viewName="ui5.walkthrough.view.HelloPanel"/>
 
 <mvc:XMLView
