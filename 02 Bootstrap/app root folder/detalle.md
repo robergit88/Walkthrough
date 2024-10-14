@@ -17,24 +17,18 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 <html>
 <head>
  <meta charset="utf-8">
- <title>UI5 Walkthrough</title>
+  <title>UI5 Walkthrough</title>
 
- <script
-id="sap-ui-bootstrap" 
-src="resources/sap-ui-core.js"       
-data-sap-ui-theme="sap_horizon"
-data-sap-ui-libs="sap.m" 
-data-sap-ui-compat-version="edge" 
-data-sap-ui-async="true"
-data-sap-ui-on-init=
-
-"module:ui5/walkthrough/index" 
-
-data-sap-ui-resource-roots='{
- "ui5.walkthrough": "./" }'>
-
-</script>
-
+    <script
+        id="sap-ui-bootstrap" 
+        src="resources/sap-ui-core.js"       
+        data-sap-ui-theme="sap_horizon"
+        data-sap-ui-libs="sap.m" 
+        data-sap-ui-compat-version="edge" 
+        data-sap-ui-async="true"        
+        data-sap-ui-resource-roots='{"ui5.walkthrough": "./" }'
+        data-sap-ui-on-init= "module:ui5/walkthrough/index">
+    </script>
 </head>
 
 <body>
@@ -49,12 +43,12 @@ En este paso, cargamos el marco SAPUI5 desde el servidor web proporcionado por U
 e inicializamos los módulos principales con las siguientes opciones de configuración:
 
 
-El atributo id de la etiqueta <script> debe ser exactamente "sap-ui-bootstrap" 
+El atributo id del atributo **script** debe ser exactamente **sap-ui-bootstrap** 
 para garantizar el inicio adecuado del tiempo de ejecución de SAPUI5.
 
 
 Los controles SAPUI5 admiten diferentes temas. 
-Elegimos sap_horizon como nuestro tema predeterminado.
+Elegimos **sap_horizon** como nuestro tema predeterminado.
 
 
 Especificamos la biblioteca de UI requerida sap.m, que contiene los controles de UI que necesitamos para este tutorial.
