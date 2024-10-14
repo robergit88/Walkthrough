@@ -2,7 +2,13 @@
 # Step 5: Controllers
 ********************
 
-En este paso, reemplazamos el texto con un botón y cuando se presione el botón mostraremos el mensaje "Hola mundo".
+En este paso, reemplazamos el texto con un botón y cuando se presione el botón mostraremos el mensaje "Hello world".
+
+
+
+![saludar](webapp/img/saludar_05.png)
+
+
 
 1. Se modifica la vista [webapp/view/App.view.xml](webapp/view/App.view.xml)
 
@@ -19,13 +25,17 @@ En este paso, reemplazamos el texto con un botón y cuando se presione el botón
 </mvc:View>
 ```
 
+
+<mark>controllerName="ui5.walkthrough.controller.App"</mark>
+
+
 Tenemos que especificar el nombre del controlador que está conectado a la vista  configurando el atributo **controllerName** de la vista.
 
 
-Añadimos un botón con el texto "say Hello".
+Añadimos un botón con texto **"say Hello"**
 
 
-El botón activa la función de controlador de eventos .onShowHello cuando se presiona.
+Cuando se presiona el botón se lanza el evento **.onShowHello**
 
 
 El nombre del controlador es una combinación del espacio de nombres de su aplicación seguido del nombre real del controlador.
@@ -44,28 +54,39 @@ El manejo del evento clik del botón se implementa en el controlador de la vista
 
 ```js
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
- ], (Controller) => {
+    "sap/ui/core/mvc/Controller"], 
+    (Controller) => {
     "use strict";
 
     return Controller.extend("ui5.walkthrough.controller.App", {
+       
        onShowHello() {
-          // show a native JavaScript alert
+          
           alert("Hello World from controller class");
        }
+
     });
  });
 ```
 
 
-Definimos el controlador de la aplicación en su propio archivo extendiendo el archivo sap/ui/core/mvc/Controller proporcionado por UI5.
+Definimos el controlador extendiendo la clase estándar 
+**sap/ui/core/mvc/Controller** proporcionado por UI5.
 
 
 Al principio, contiene solo una función llamada **onShowHello** que maneja el evento de pulsación del botón mostrando una alerta.
 
 
-### Convenciones:
-1. #### Los nombres de los controladores deben ser capitalizados.
-2. #### Los controladores llevan el mismo nombre que la vista relacionada (si hay una relación 1:1).
-3. #### Los controladores de eventos tienen el prefijo **on**
-4. #### Los nombres de los controladores siempre terminan en ***.controller.js**
+## Convenciones
+
+
+- Los nombres de los controladores deben ser capitalizados.
+
+
+- Los controladores llevan el mismo nombre que la vista relacionada (si hay una relación 1:1).
+
+
+- Los controladores de eventos tienen el prefijo **on**
+
+
+- Los nombres de los controladores siempre terminan en ***.controller.js**

@@ -5,5 +5,4 @@
    <Button
       text="Say Hello"
       press=".onShowHello"/>
-
 </mvc:View>
