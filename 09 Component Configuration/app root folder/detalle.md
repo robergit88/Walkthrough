@@ -5,7 +5,7 @@
 Después de haber introducido las tres partes del concepto **Modelo-Vista-Controlador (MVC)**, llegamos a otro aspecto estructural importante de SAPUI5.
 
 
-En este paso, encapsularemos todos los recursos de la interfaz de usuario en un componente que es independiente de nuestro archivo **index.html**.
+En este paso, encapsularemos todos los recursos de la interfaz de usuario en un componente que es independiente de nuestro archivo **index.html**
 
 
 Los componentes son piezas independientes y reutilizables que se utilizan en aplicaciones SAPUI5.
@@ -36,10 +36,9 @@ metadata: {
 "interfaces": ["sap.ui.core.IAsyncContentCreation"],
 
 "rootView": {
-  "viewName": "ui5.walkthrough.view.App",
-            "type": "XML",
-            "id": "app"
-         }
+ "viewName": "ui5.walkthrough.view.App",
+             "type": "XML",
+             "id": "app" }
       },
 
  
@@ -56,9 +55,9 @@ const oData = {
          name: "World" }
          };
 
-//Se intancia un modelo de datos
-         const oModel = new JSONModel(oData);
-         this.setModel(oModel);
+//Se intancia modelo de datos
+ const oModel = new JSONModel(oData);
+ this.setModel(oModel);
 
 // Se configura un modelo internacionalización
 const i18nModel = new ResourceModel({
@@ -73,7 +72,7 @@ this.setModel(i18nModel, "i18n");
 
 
 
-El archivo **Component.js** ahora consta de dos partes:
+El archivo **Component.js** consta de dos partes:
 
 
 + La nueva sección **metadata**
