@@ -8,7 +8,7 @@ Una vez finalizado este arranque, simplemente mostramos una alerta.
 
 
 
-![saludar](webapp/img/boot.png).
+![saludar](webapp/img/boot.png)
 
 
 
