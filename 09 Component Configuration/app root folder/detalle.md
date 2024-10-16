@@ -94,6 +94,8 @@ En la función **init** creamos una instancia de nuestro modelo de datos y el mo
 
 Sin embargo, como los controles anidados heredan automáticamente los modelos de sus controles principales, los modelos también están disponibles en la vista.
 
+
+
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
 
