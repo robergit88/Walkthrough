@@ -156,8 +156,9 @@ sap.ui.define([
  "use strict";
 
  new ComponentContainer({
-     name: "ui5.walkthrough",
-            settings : {
+
+  name: "ui5.walkthrough",
+  settings: {
               id: "walkthrough" },
               async: true
         }).placeAt("content");
