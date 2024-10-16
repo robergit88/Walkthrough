@@ -28,6 +28,7 @@ sap.ui.define([
    return Controller.extend("ui5.walkthrough.controller.App", {
 
       onInit() {
+
    // se configura modelo local en formato json
          const oData = {
             recipient : {
@@ -43,10 +44,11 @@ sap.ui.define([
       onShowHello() {
          MessageToast.show("Hello World");
       }
+
    });
 });
 ```
-Agregamos una función onInit al controlador. Este es uno de los métodos del ciclo de vida de SAPUI5 que el sistema invoca cuando se crea un controlador, similar al constructor de un control.
+Agregamos una función **onInit** al controlador. Este es uno de los métodos del ciclo de vida de SAPUI5 que el sistema invoca cuando se crea un controlador, similar al constructor de un control.
 
 Dentro de la función creamos una instancia de un modelo JSON. 
 
@@ -57,7 +59,7 @@ Los datos del modelo solo contienen una única propiedad para el "destinatario",
 Para poder utilizar este modelo en la vista, llamamos a la función setModel y pasamos nuestro modelo recién creado.
 
 
-El mensaje solo muestra el mensaje estático "Hola mundo". 
+El mensaje solo muestra el mensaje estático "Hello world". 
 
 2. Se modifica la vista [App.view.xml](webapp/view/App.view.xml)
 ``` XML
@@ -80,7 +82,7 @@ El mensaje solo muestra el mensaje estático "Hola mundo".
 </mvc:View>
 ```
 
-Agregamos un control sap/m/Input a la vista. Con esto, el usuario puede ingresar un destinatario para los saludos. 
+Agregamos un control **sap/m/Input** a la vista. Con esto, el usuario puede ingresar un destinatario para los saludos. 
 
 
 Vinculamos su valor a un modelo SAPUI5 utilizando la sintaxis de vinculación 
@@ -91,4 +93,4 @@ Las llaves {...} indican que los datos se toman del valor de la propiedad nombre
 del objeto destinatario. Esto se llama "vinculación de datos".
 
 
-/destinatario/nombre declara la ruta en el modelo.
+**/recipient/name** declara la ruta en el modelo.
