@@ -107,3 +107,28 @@ const sMsg = oBundle.getText("helloMsg", [sRecipient]);
 
 </mvc:View>
 ```
+
+En la vista XML, utilizamos el enlace de datos para conectar el texto del botón a la propiedad 
+showHelloButtonText en el modelo i18n. Un paquete de recursos es una estructura plana,
+por lo que se puede omitir la barra diagonal (/) anterior en la ruta.
+
+
+Los archivos i18n sólo afectan a los textos de las aplicaciones del lado del cliente. 
+Los textos que se cargan desde los sistemas back-end pueden aparecer 
+en todos los idiomas admitidos por el sistema back-end.
+
+## Convenciones
+
+- El modelo de recursos para la internacionalización se llama modelo i18n.
+
+
+- Las claves del paquete de recursos están escritas en camelCase (inferior).
+
+
+- Los valores del paquete de recursos pueden contener parámetros como {0}, {1}, {2},…
+
+
+- Nunca concatene cadenas que estén traducidas, utilice siempre marcadores de posición.
+
+
+- Utilice secuencias de escape Unicode para caracteres especiales.
