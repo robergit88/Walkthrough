@@ -53,7 +53,7 @@ Agregamos una función **onInit** al controlador. Este es uno de los métodos de
 Dentro de la función creamos una instancia de un modelo JSON. 
 
 
-Los datos del modelo solo contienen una única propiedad para el "destinatario", y dentro de este también contienen una propiedad adicional para el nombre.
+Los datos del modelo solo contienen una única propiedad para el **"recipient"**, y dentro de este también contienen una propiedad adicional para el **"name"**
 
 
 Para poder utilizar este modelo en la vista, llamamos a la función setModel y pasamos nuestro modelo recién creado.
