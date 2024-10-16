@@ -74,22 +74,22 @@ this.setModel(i18nModel, "i18n");
 El archivo **Component.js** ahora consta de dos partes:
 
 
-+ La nueva sección de metadatos
++ La nueva sección **metadata**
 
 
-+ La función init introducida anteriormente que se llama cuando se inicializa el componente.
++ La función **init** introducida anteriormente que se llama cuando se inicializa el componente.
 
 
-La sección de metadatos define una referencia a la vista raíz, de modo que en lugar de mostrar la vista raíz directamente en el archivo index.js como lo hicimos anteriormente, el componente ahora administra la visualización de la vista de la aplicación.
+La sección **metadata** define una referencia a la vista raíz, de modo que en lugar de mostrar la vista raíz directamente en el archivo **index.js** como lo hicimos anteriormente, el componente ahora administra la visualización de la vista de la aplicación.
 
 
 También implementa la interfaz **sap.ui.core.IAsyncContentCreation**, que permite crear el componente de forma totalmente asíncrona.
 
 
-En la función **init** creamos una instancia de nuestro modelo de datos y el modelo i18n como lo hicimos antes en el controlador de la aplicación.
+En la función **init** creamos una instancia de nuestro modelo de datos y el modelo **i18n** como lo hicimos antes en el controlador de la aplicación.
 
 
-<ins>Tenga en cuenta que ahora los modelos se configurarán directamente en el componente y no en la vista raíz del componente</ins>.
+**ahora los modelos se configurarán directamente en el componente y no en la vista raíz del componente**.
 
 
 Sin embargo, como los controles anidados heredan automáticamente los modelos de sus controles principales, los modelos también están disponibles en la vista.
@@ -97,6 +97,6 @@ Sin embargo, como los controles anidados heredan automáticamente los modelos de
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
 
-Se elimina la función onInit y los módulos requeridos; esto ahora se hace en el componente.
+Se elimina la función **onInit** y los módulos requeridos; esto ahora se hace en el componente.
 
 3. Se modifica el fichero [index.js](webapp/index.js)
