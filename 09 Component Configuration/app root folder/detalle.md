@@ -137,7 +137,7 @@ const sRecipient = this.getView().getModel().getProperty("/recipient/name");
 const sMsg = oBundle.getText("helloMsg", [sRecipient]);
 
 // Se muestra mensaje
-                        MessageToast.show(sMsg);
+MessageToast.show(sMsg);
                 }
         });
 });
@@ -146,3 +146,21 @@ const sMsg = oBundle.getText("helloMsg", [sRecipient]);
 
 
 3. Se modifica el fichero [index.js](webapp/index.js)
+
+
+```js
+sap.ui.define([
+"sap/ui/core/ComponentContainer"], 
+
+(ComponentContainer) => {
+ "use strict";
+
+ new ComponentContainer({
+     name: "ui5.walkthrough",
+            settings : {
+              id: "walkthrough" },
+              async: true
+        }).placeAt("content");
+});
+
+```
