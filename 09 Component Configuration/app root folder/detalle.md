@@ -98,7 +98,36 @@ Sin embargo, como los controles anidados heredan automáticamente los modelos de
 
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
-
 Se elimina la función **onInit** y los módulos requeridos; esto ahora se hace en el componente.
+
+```js
+sap.ui.define([
+"sap/ui/core/mvc/Controller",
+"sap/m/MessageToast"], 
+(Controller, MessageToast) => {
+        "use strict";
+
+return Controller.extend("ui5.walkthrough.controller.App", {
+
+         
+onShowHello() {
+
+// se instancia modelo internacionalización
+const oBundle = this.getView().getModel("i18n").getResourceBundle();
+
+//se configura destinatario
+const sRecipient = this.getView().getModel().getProperty("/recipient/name");
+
+//se compone string mensaje
+const sMsg = oBundle.getText("helloMsg", [sRecipient]);
+
+// Se muestra mensaje
+                        MessageToast.show(sMsg);
+                }
+        });
+});
+
+```
+
 
 3. Se modifica el fichero [index.js](webapp/index.js)
