@@ -101,6 +101,7 @@ Sin embargo, como los controles anidados heredan automáticamente los modelos de
 Se elimina la función **onInit** y los módulos requeridos; esto ahora se hace en el componente.
 
 ```js
+
 sap.ui.define([
 "sap/ui/core/mvc/Controller",
 "sap/m/MessageToast"], 
@@ -109,7 +110,21 @@ sap.ui.define([
 
 return Controller.extend("ui5.walkthrough.controller.App", {
 
-         
+//onInit() {
+//const oData = {
+//          recipient : {
+//               name : "World"
+//          }
+//        };
+//        const oModel = new JSONModel(oData);
+//        this.getView().setModel(oModel);
+//
+//       const i18nModel = new ResourceModel({
+//       bundleName: //"ui5.walkthrough.i18n.i18n"
+// });
+//       this.getView().setModel(i18nModel, //"i18n");
+//     },
+       
 onShowHello() {
 
 // se instancia modelo internacionalización
