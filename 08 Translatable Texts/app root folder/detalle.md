@@ -11,7 +11,14 @@ Este proceso de internacionalización (en resumen, i18n) se logra en SAPUI5 medi
 
 Creamos la carpeta webapp/i18n y dentro el archivo i18n.properties.
 
-El nombre del paquete resuelto es ui5.walkthrough.i18n, como veremos más adelante
+``` js
+showHelloButtonText=Say Hello
+helloMsg=Hello {0}
+```
+
+
+
+El nombre del paquete resuelto es u **i5.walkthrough.i18n**, como veremos más adelante
 El archivo de propiedades de textos contiene pares de nombre-valor para cada elemento. 
 Puede agregar cualquier cantidad de parámetros a los textos agregándoles números entre llaves
 Estos números corresponden a la secuencia en la que se accede a los parámetros (comenzando por 0).
@@ -19,7 +26,7 @@ Estos números corresponden a la secuencia en la que se accede a los parámetros
 En este tutorial solo tendremos un archivo de propiedades.
 Sin embargo, en proyectos del mundo real, tendría un archivo separado para cada idioma admitido 
 con un sufijo para la configuración regional.
-por ejemplo, i18n_de.properties para alemán, i18n_en.properties para inglés, etc. 
+por ejemplo, **i18n_de.properties** para alemán, **i18n_en.properties** para inglés, etc. 
 Cuando un usuario ejecuta la aplicación, SAPUI5 cargará el archivo de idioma que mejor se adapte al entorno del usuario.
 
 1. se crea carpeta 📂 y fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
