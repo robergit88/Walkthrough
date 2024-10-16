@@ -43,15 +43,3 @@ sap.ui.define([
    });
 });
 
-// El archivo "Component.js" contendrá
-// la configuración de nuestra aplicación.
-// SAPUI5 invoca automáticamente la función 
-// de inicio del componente cuando se crea 
-// una instancia del componente.
-// Nuestro componente hereda de la clase base sap/ui/core/UIComponent, y es obligatorio realizar
-// la llamada súper a la función init de la
-
-//clase base en el método init anulado.
-
-
-
