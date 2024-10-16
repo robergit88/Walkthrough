@@ -41,9 +41,7 @@ metadata: {
              "id": "app" }
       },
 
- 
 //Se define una función inicializadora del componente
-      
 init() {
 
 // Llamar a la funcion init padre
@@ -59,7 +57,7 @@ const oData = {
  const oModel = new JSONModel(oData);
  this.setModel(oModel);
 
-// Se configura un modelo internacionalización
+// Se intancia modelo de internacionalización
 const i18nModel = new ResourceModel({
 bundleName: "ui5.walkthrough.i18n.i18n"
          });
@@ -71,17 +69,16 @@ this.setModel(i18nModel, "i18n");
 ```
 
 
-
 El archivo **Component.js** consta de dos partes:
 
 
-+ La nueva sección **metadata**
++ Sección **metadata**
 
 
-+ La función **init** introducida anteriormente que se llama cuando se inicializa el componente.
++ Función **init** 
 
 
-La sección **metadata** define una referencia a la vista raíz, de modo que en lugar de mostrar la vista raíz directamente en el archivo **index.js** como lo hicimos anteriormente, el componente ahora administra la visualización de la vista de la aplicación.
+La sección **metadata** define una referencia a la vista principal de la aplicación, de modo que en lugar de mostrar dicha vista en el archivo **index.js** directamente, ahora es el componente quien gestiona su visualización.
 
 
 También implementa la interfaz **sap.ui.core.IAsyncContentCreation**, que permite crear el componente de forma totalmente asíncrona.
@@ -98,7 +95,6 @@ Sin embargo, como los controles anidados heredan automáticamente los modelos de
 
 2. Se modifica el fichero [App.controller.js](webapp/controller/App.controller.js)
 
-Se elimina la función **onInit** y los módulos requeridos; esto ahora se hace en el componente.
 
 ```js
 
@@ -113,15 +109,15 @@ return Controller.extend("ui5.walkthrough.controller.App", {
 //onInit() {
 //const oData = {
 //          recipient : {
-//               name : "World"
-//          }
+//               name : "World" }
 //        };
+//
 //        const oModel = new JSONModel(oData);
 //        this.getView().setModel(oModel);
 //
 //       const i18nModel = new ResourceModel({
-//       bundleName: //"ui5.walkthrough.i18n.i18n"
-// });
+//       bundleName: //"ui5.walkthrough.i18n.i18n" });
+// 
 //       this.getView().setModel(i18nModel, //"i18n");
 //     },
        
@@ -143,6 +139,9 @@ MessageToast.show(sMsg);
 });
 
 ```
+
+Se elimina la función **onInit** y los módulos requeridos; esto ahora se hace en el componente.
+
 
 
 3. Se modifica el fichero [index.js](webapp/index.js)
