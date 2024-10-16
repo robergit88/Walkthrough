@@ -32,8 +32,9 @@ sap.ui.define([
 
 //Se configuran metadatos de la aplicación
 metadata: {
-  "interfaces": ["sap.ui.core.IAsyncContentCreation"],
- "rootView": {
+"interfaces": ["sap.ui.core.IAsyncContentCreation"],
+
+"rootView": {
   "viewName": "ui5.walkthrough.view.App",
             "type": "XML",
             "id": "app"
@@ -48,10 +49,10 @@ init() {
 // Llamar a la funcion init padre
 UIComponent.prototype.init.apply(this, arguments);
 
-// se configura un modelo de datos estructurado en formato json
-         const oData = {
-            recipient: {
-               name: "World" }
+// se configura un modelo de datos
+const oData = {
+ recipient: {
+         name: "World" }
          };
 
 //Se intancia un modelo de datos
