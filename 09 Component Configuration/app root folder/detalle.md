@@ -32,6 +32,7 @@ sap.ui.define([
 
 //Se configuran metadatos de la aplicación
 metadata: {
+
 "interfaces": ["sap.ui.core.IAsyncContentCreation"],
 
 "rootView": {
