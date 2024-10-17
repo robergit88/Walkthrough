@@ -33,19 +33,3 @@ sap.ui.define([
       }
    });
 });
-
-// Ahora podemos eliminar por completo las líneas de código que contienen la creación de instancias del 
-// modelo para nuestro paquete de recursos. SAPUI5 lo hace automáticamente con la ayuda de las entradas 
-// de configuración en el descriptor.
-// También podemos eliminar la dependencia de sap/ui/model/resource/ResourceModel y el parámetro formal 
-// correspondiente ResourceModel porque no usaremos esto dentro de nuestra función de devolución de llamada 
-// anónima.
-
-// Convenciones
-// --------------
-// El archivo descriptor se denomina manifest.json y se encuentra en la carpeta de la aplicación web.
-
-// Utilice cadenas traducibles para el título y la descripción de la aplicación.
-
-
-
