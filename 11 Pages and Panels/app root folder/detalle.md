@@ -6,7 +6,7 @@ Después de todo el trabajo en la estructura de la aplicación, es hora de mejor
 nuestra aplicación.
 
 
-Usaremos dos controles de la biblioteca *"sap.m** para agregar un poco más de "brillo" a la interfaz de usuario.
+Usaremos dos controles de la biblioteca **sap.m** para agregar un poco más de "brillo" a la interfaz de usuario.
 
 
 También aprenderá sobre las agregaciones de control en este paso.
