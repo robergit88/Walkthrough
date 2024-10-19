@@ -137,11 +137,12 @@ this.oDialog ??= await this.loadFragment({
  });
 ```
 
-Usando async/await, manejamos la apertura del diálogo de forma asincrónica cada vez que se activa el evento.
+Usando **async/await**, manejamos la apertura del diálogo de forma asincrónica cada vez que se activa el evento.
 
 
-Si el fragmento de diálogo aún no existe, se crea una instancia del fragmento llamando a la API loadFragment. Luego almacenamos el cuadro de diálogo en la instancia del controlador. 
+Si el fragmento de diálogo aún no existe, se crea una instancia del fragmento llamando a la **API loadFragment**. Luego almacenamos el cuadro de diálogo en la instancia del controlador. 
 Esto nos permite reutilizar el diálogo cada vez que se activa el evento.
+
 
 
 TIP
@@ -153,3 +154,18 @@ desde ui5.walkthrough.controller.BaseController en lugar de sap.ui.core.mvc.Cont
 
 
 4. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+
+``` js
+# App Descriptor
+appTitle=Hello World
+appDescription=A simple walkthrough app that explains the most important concepts of SAPUI5
+
+# Hello Panel
+showHelloButtonText=Say Hello
+helloMsg=Hello {0}
+homePageTitle=Walkthrough
+helloPanelTitle=Hello World
+openDialogButtonText=Say Hello With Dialog
+
+# Agregamos un nuevo texto para el botón openDialogButtonText
+```
