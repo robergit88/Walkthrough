@@ -53,7 +53,7 @@ luego aplicamos el tipo de datos de moneda en el número configurando  el atribu
 
 
 
-Como puede ver arriba, estamos utilizando una sintaxis de enlace especial para la propiedad numérica de "*ObjectListItem**. Esta sintaxis de vinculación utiliza los llamados "campos calculados",que permiten vincular múltiples propiedades de diferentes modelos a una única propiedad de un control.
+Como puede ver arriba, estamos utilizando una sintaxis de enlace especial para la propiedad numérica de **ObjectListItem**. Esta sintaxis de vinculación utiliza los llamados "campos calculados",que permiten vincular múltiples propiedades de diferentes modelos a una única propiedad de un control.
 
 
 Las propiedades vinculadas a diferentes modelos se denominan "partes".
@@ -62,8 +62,7 @@ Las propiedades vinculadas a diferentes modelos se denominan "partes".
 En el ejemplo anterior, la propiedad del control es número y las propiedades vinculadas (“partes”) recuperadas de dos modelos diferentes son **invoice>ExtendedPrice** and **view>/currency**
 
 
-
-Queremos mostrar el precio en euros y, normalmente, la moneda forma parte de nuestro modelo de datos en el back-end. En nuestro caso esto no es así, por lo que debemos definirlo directamente en la aplicación.
+Queremos mostrar el precio en euros y, normalmente, la moneda forma parte de nuestro modelo de datos en el back-end. En nuestro caso esto no es así, por lo que debemos definir clave moneda directamente en la aplicación.
 
 
 Por lo tanto, agregamos un controlador para la lista de facturas y utilizamos la propiedad de moneda como segunda parte de nuestra sintaxis vinculante.
