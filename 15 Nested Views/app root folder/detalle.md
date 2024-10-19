@@ -70,8 +70,10 @@ Nos referimos a esto usando una etiqueta **XMLView** en la agregación de conten
 </mvc:View>
 ```
 
-Todo el contenido del panel ahora se agrega al nuevo archivo HelloPanel.view.xml. 
+Todo el contenido del panel se añade sobre la vista nueva **HelloPanel.view.xml**
 También especificamos el controlador de la vista configurando el atributo nombre del controlador de la vista XML. 
+
+
 
 3. Se crea el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
