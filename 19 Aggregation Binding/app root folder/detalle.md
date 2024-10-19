@@ -71,11 +71,14 @@ El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON
 ```
 <mark>invoice</mark>
 
+Sobre la sección **sap.ui5** del descriptor 
+añadimos un nuevo modelo de datos de nombre **invoice**.
 
-Añadimos un nuevo modelo **invoice** sobre la sección **sap.ui5** del descriptor. Esta vez queremos un **JSONModel**, por lo que configuramos el **type** cómo  **sap.ui.model.json.JSONModel.** 
+
+Esta vez queremos un **JSONModel**, por lo que configuramos el **type** cómo **sap.ui.model.json.JSONModel** 
 
 
-La clave **uri** es la ruta a nuestros datos relacionados con el componente. 
+La clave **uri** es la ruta a nuestro fichero de datos. 
 
 
 Con esta pequeña configuración, nuestro componente creará automáticamente una instancia de un nuevo **JSONModel** que carga los datos de la factura desde el archivo **Invoices.json**
@@ -144,13 +147,23 @@ En la vista de la aplicación agregamos una segunda vista para mostrar nuestras 
 ```
 
 
-La nueva vista muestra un control tipo **List** con un texto de encabezado. La agregación de elementos de la lista está vinculada a la ruta raíz **Invoices** de los datos **JSON**. Y dado que definimos un modelo con nombre, tenemos que anteponer a cada definición el identificador **invoice**.
+La nueva vista muestra un control tipo **List** con un texto de encabezado. Los elementos de la lista de vinculan por la ruta **Invoices** del fichero con datos **JSON**. 
+
+
+
+Y dado que definimos un modelo con nombre, tenemos que anteponer a cada definición el identificador **invoice**.
 
 
 Para los artículos definimos la plantilla para el listado que se repetirá automáticamente para cada factura de nuestros datos de prueba. 
 
 
-Más precisamente, utilizamos **sap/m/ObjectListItem** para crear un control para cada elemento secundario agregado de la agregación de elementos. La propiedad del título del elemento de la lista está vinculada a las propiedades de una única factura. Esto se logra definiendo una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado la agregación de artículos mediante **items={invoice>/Invoices}** a las facturas.
+Más precisamente, utilizamos **sap/m/ObjectListItem** para crear un control para cada elemento secundario agregado de la agregación de elementos. 
+
+
+El atributo **title** de cada elemento de la lista es el identificador único de cada factura.
+
+
+Esto se logra definiendo una ruta relativa (sin/al principio). Esto funciona porque hemos vinculado la agregación de artículos mediante **items={invoice>/Invoices}** a las facturas.
 
 5. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
 
