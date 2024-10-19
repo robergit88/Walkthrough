@@ -14,6 +14,37 @@ con un separador decimal que depende de la configuración regional y dos dígito
 
 Se mostrará la lista de facturas con precios y unidades numéricas.
 
-1. Se crea el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
+1. Se modifica el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
+
+
+
+``` XML
+<mvc:View
+controllerName="ui5.walkthrough.controller.InvoiceList"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+   <List
+      headerText="{i18n>invoiceListTitle}"
+      class="sapUiResponsiveMargin"
+      width="auto"
+      items="{invoice>/Invoices}" >
+      <items>
+         <ObjectListItem
+
+            title="{invoice>Quantity} x {invoice>ProductName}"
+
+            number="{
+                    parts: [ 'invoice>ExtendedPrice',
+                             'view>/currency'],
+                    type: 'sap.ui.model.type.Currency',
+                    formatOptions: { showMeasure: false } }"
+
+           numberUnit="{view>/currency}"/>
+
+      </items>
+   </List>
+</mvc:View>
+```
+
 
 2. Se crea el fichero [webapp/controller/InvoiceList.controller.js](webapp/controller/InvoiceList.controller.js)
