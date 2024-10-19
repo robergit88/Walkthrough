@@ -1,10 +1,12 @@
 ***
 # Step 18: Icons
 ***
-Agregaremos un ícono para saludar a nuestros usuarios cuando se abra el cuadro de diálogo.
+Añadiremos un ícono para saludar a nuestros usuarios cuando se abra el cuadro de diálogo.
 
 
-SAPUI5 trabaja con una fuente de íconos que contiene más de 500 entradas.
+**SAPUI5** trabaja con una fuente de íconos que contiene más de 500 entradas.
+
+
 
 1. Se modifica el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
 
@@ -40,10 +42,14 @@ SAPUI5 trabaja con una fuente de íconos que contiene más de 500 entradas.
    </Panel>
 </mvc:View>
 ```
+
+
 En el botón <mark>helloDialogButton</mark> se configura un icono (pequeño)
 
 
-El protocolo **sap-icon://** indica que se debe cargar un ícono de la fuente del ícono. 
+El protocolo **sap-icon://** indica que se debe cargar un ícono de la fuente del ícono.
+
+
 El identificador **world** es el nombre del ícono en el repositorio de íconos.
 
 
@@ -76,13 +82,17 @@ Para llamar a cualquier ícono, use su nombre tal como aparece en el Explorador 
 
 ```
 
-En el fragmento de diálogo, agregamos un control de icono (grande) como contenido del diálogo. 
+
+En el fragmento de diálogo, añadimos otro icono (grande) como contenido del diálogo.
+
+
+
 Afortunadamente, la fuente del ícono también viene con un ícono de “Hello World” 
 que es perfecto para nosotros aquí.
 
 
-También definimos el tamaño del icono y le establecemos 
-un margen medio. -->
+También definimos el tamaño del icono y le establecemos un margen medio.
+
 
 ## Convenciones
 
