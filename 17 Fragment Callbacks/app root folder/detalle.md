@@ -89,13 +89,30 @@ Al utilizar la función **loadFragment** para crear el contenido del fragmento, 
 El cuadro de diálogo tiene una agregación denominada **beginButton** y **endButton**. La colocación de botones en ambas agregaciones garantiza que **beginButton** se coloque antes que **endButton** en la interfaz de usuario.
 
 
-Sin embargo, lo que significa before depende de la dirección del texto del idioma actual.
-Por lo tanto, utilizamos los términos begin y end como sinónimos de "izquierda" y "derecha".
+Sin embargo, lo que significa **before** depende de la dirección del texto del idioma actual.
+Por lo tanto, utilizamos los términos **begin** y **end** como sinónimos de **"izquierda"** y **"derecha"**.
 
 
-En idiomas con dirección de izquierda a derecha, beginButton se representará a la izquierda y endButton al lado derecho del pie de página del cuadro de diálogo; 
-en el modo de derecha a izquierda para idiomas específicos, el orden se invierte.
+En idiomas con dirección de izquierda a derecha, **beginButton** se representará a la **izquierda** y **endButton** al lado *derecho** del pie de página del cuadro de diálogo; en el modo de derecha a izquierda para idiomas específicos, el orden se invierte.
 
 
 
 3. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+
+
+``` js
+# App Descriptor
+appTitle=Hello World
+appDescription=A simple walkthrough app that explains the most important concepts of SAPUI5
+
+# Hello Panel
+showHelloButtonText=Say Hello
+helloMsg=Hello {0}
+homePageTitle=Walkthrough
+helloPanelTitle=Hello World
+openDialogButtonText=Say Hello With Dialog
+dialogCloseButtonText=Ok
+```
+
+
+Se añade nuevo texto para el botón de cerrar el cuadro de diálogo.
