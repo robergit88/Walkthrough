@@ -17,6 +17,3 @@ sap.ui.define([
        }
     });
  });
-
-//  Para tener un recurso reutilizable, el método onShowHello también se mueve del controlador 
-//  de la aplicación al controlador HelloPanel.
