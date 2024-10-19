@@ -75,4 +75,31 @@ También especificamos el controlador de la vista configurando el atributo nombr
 
 3. Se crea el fichero [webapp/controller/HelloPanel.controller.js](webapp/controller/HelloPanel.controller.js)
 
+
+``` js
+sap.ui.define([
+    "sap/ui/core/mvc/Controller",
+    "sap/m/MessageToast"
+ ], (Controller, MessageToast) => {
+    "use strict";
+
+    return Controller.extend("ui5.walkthrough.controller.HelloPanel", {
+
+       onShowHello() {
+          // read msg from i18n model
+          const oBundle = this.getView().getModel("i18n").getResourceBundle();
+          const sRecipient = this.getView().getModel().getProperty("/recipient/name");
+          const sMsg = oBundle.getText("helloMsg", [sRecipient]);
+
+          // show message
+          MessageToast.show(sMsg);
+       }
+    });
+ });
+```
+
+
+Para tener un recurso reutilizable, el método **onShowHello** también se mueve del controlador de la aplicación al controlador **HelloPanel**.
+
+
 3. Se modifica el fichero [webapp/controller/App.controller.js](webapp/controller/App.controller.js)
