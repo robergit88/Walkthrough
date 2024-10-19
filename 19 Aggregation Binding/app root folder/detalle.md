@@ -33,6 +33,8 @@ Comenzamos a explorar más funciones del enlace de datos agregando algunos datos
 }]
 }
 ```
+
+
 El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON que podemos usar para vincular controles contra ellas en la aplicación.
 
 
@@ -70,13 +72,13 @@ El archivo **Invoices.json** simplemente contiene cinco facturas en formato JSON
 <mark>invoice</mark>
 
 
-Agregamos un nuevo modelo **invoice** a la sección **sap.ui5** del descriptor. Esta vez queremos un **JSONModel**, por lo que configuramos el tipo en **sap.ui.model.json.JSONModel.** 
+Añadimos un nuevo modelo **invoice** sobre la sección **sap.ui5** del descriptor. Esta vez queremos un **JSONModel**, por lo que configuramos el **type** cómo  **sap.ui.model.json.JSONModel.** 
 
 
 La clave **uri** es la ruta a nuestros datos relacionados con el componente. 
 
 
-Con esta pequeña configuración, nuestro componente creará automáticamente una instancia de un nuevo **JSONModel** que carga los datos de la factura desde el archivo Invoices.json.
+Con esta pequeña configuración, nuestro componente creará automáticamente una instancia de un nuevo **JSONModel** que carga los datos de la factura desde el archivo **Invoices.json**
 
 
 Finalmente, el **JSONModel** instanciado se coloca en el componente como una factura modelo con nombre. El modelo nombrado luego es visible en toda nuestra aplicación.
