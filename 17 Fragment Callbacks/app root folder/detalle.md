@@ -93,7 +93,7 @@ Sin embargo, lo que significa **before** depende de la dirección del texto del 
 Por lo tanto, utilizamos los términos **begin** y **end** como sinónimos de **"izquierda"** y **"derecha"**.
 
 
-En idiomas con dirección de izquierda a derecha, **beginButton** se representará a la **izquierda** y **endButton** al lado *derecho** del pie de página del cuadro de diálogo; en el modo de derecha a izquierda para idiomas específicos, el orden se invierte.
+En idiomas con dirección de izquierda a derecha, **beginButton** se representará a la **izquierda** y **endButton** al lado **derecho** del pie de página del cuadro de diálogo; en el modo de derecha a izquierda para idiomas específicos, el orden se invierte.
 
 
 
