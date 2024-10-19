@@ -106,7 +106,7 @@ Para tener un recurso reutilizable, el método **onShowHello** también se mueve
 
 3. Se modifica el fichero [webapp/controller/App.controller.js](webapp/controller/App.controller.js)
 
-```
+``` js
 sap.ui.define([
 "sap/ui/core/mvc/Controller"
 ], (Controller) => {
