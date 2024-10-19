@@ -18,6 +18,3 @@
 		</App>
 	</Shell>
 </mvc:View>
-
-<!-- En la vista de la aplicación agregamos una segunda vista para mostrar nuestras facturas 
-debajo del panel. -->
