@@ -38,8 +38,8 @@ El contenido del panel ahora se refactoriza en una vista separada
 
 
 En lugar de colocar el panel y su contenido directamente en nuestra vista de aplicación, 
-lo moveremos a una nueva vista separada de HelloPanel. 
-Nos referimos a esto usando una etiqueta XMLView en la agregación de contenido del panel.
+lo moveremos a una nueva vista llamada **HelloPanel**. 
+Nos referimos a esto usando una etiqueta **XMLView** en la agregación de contenido del panel.
 
 
 2. Se crea el fichero [webapp/view/HelloPanel.view.xml](webapp/view/HelloPanel.view.xml)
