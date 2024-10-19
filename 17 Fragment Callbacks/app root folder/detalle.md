@@ -60,4 +60,42 @@ del cuadro de diálogo y la función cerrar para cerrar el cuadro de diálogo.
 
 2. Se modifica el fichero [webapp/view/HelloDialog.fragment.xml](webapp/view/HelloDialog.fragment.xml)
 
+``` xml
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog
+      id="helloDialog"
+      title ="Hello {/recipient/name}">
+      <beginButton>
+         <Button
+            text="{i18n>dialogCloseButtonText}"
+            press=".onCloseDialog"/>
+      </beginButton>
+   </Dialog>
+</core:FragmentDefinition>
+```
+
+
+Añadimos un botón a la agregación **beginButton** del cuadro de diálogo.
+
+
+El controlador de pulsación hace referencia a un controlador de eventos llamado **.onCloseDialog**
+
+
+Al utilizar la función **loadFragment** para crear el contenido del fragmento, el método se invocará allí cuando se presione el botón.
+
+
+El cuadro de diálogo tiene una agregación denominada **beginButton** y **endButton**. La colocación de botones en ambas agregaciones garantiza que **beginButton** se coloque antes que **endButton** en la interfaz de usuario.
+
+
+Sin embargo, lo que significa before depende de la dirección del texto del idioma actual.
+Por lo tanto, utilizamos los términos begin y end como sinónimos de "izquierda" y "derecha".
+
+
+En idiomas con dirección de izquierda a derecha, beginButton se representará a la izquierda y endButton al lado derecho del pie de página del cuadro de diálogo; 
+en el modo de derecha a izquierda para idiomas específicos, el orden se invierte.
+
+
+
 3. Se modifica el fichero [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
