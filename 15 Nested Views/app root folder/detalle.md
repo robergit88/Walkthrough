@@ -105,3 +105,19 @@ Para tener un recurso reutilizable, el método **onShowHello** también se mueve
 
 
 3. Se modifica el fichero [webapp/controller/App.controller.js](webapp/controller/App.controller.js)
+
+```
+sap.ui.define([
+"sap/ui/core/mvc/Controller"
+], (Controller) => {
+        "use strict";
+
+return Controller.extend("ui5.walkthrough.controller.App", {
+        });
+});
+```
+
+
+Ahora hemos eliminado todo de la vista y el controlador de la aplicación.
+El controlador de la aplicación sigue siendo un código auxiliar vacío por ahora,
+lo usaremos más adelante para agregar más funciones.
