@@ -48,7 +48,7 @@ controllerName="ui5.walkthrough.controller.InvoiceList"
 </mvc:View>
 ```
 
-Se asigna controlador sobre la vista:
+Se asigna controlador de la vista:
 
 Agregamos un precio a nuestra lista de facturas en la vista agregando los atributos **number** y **numberUnit** al control **ObjectListItem**, 
 luego aplicamos el tipo de datos de moneda en el número configurando  el atributo de tipo de la sintaxis de enlace en **sap.ui.model.type.Currency**
@@ -81,3 +81,42 @@ Esto oculta el código de moneda en el número de propiedad, porque se pasa al c
 
 
 2. Se crea el fichero [webapp/controller/InvoiceList.controller.js](webapp/controller/InvoiceList.controller.js)
+
+``` js
+sap.ui.define([
+    "sap/ui/core/mvc/Controller",
+    "sap/ui/model/json/JSONModel"], 
+    (Controller, JSONModel) => {
+    "use strict";
+
+    return Controller.extend("ui5.walkthrough.controller.InvoiceList", {
+
+        onInit() {
+
+            // Se instancia modelo en formato json con el tipo de moneda
+            const oViewModel = new JSONModel({
+                currency: "EUR"
+            });
+
+            // Se asigna modelo a la vista
+            this.getView().setModel(oViewModel, "view");
+        }
+    });
+});
+```
+
+Para poder acceder al código de moneda que no forma parte de nuestro modelo de datos, 
+definimos un modelo y lo asignamos al controlador de la lista de facturas. 
+
+
+Es un modelo JSON simple con una sola moneda clave y el valor EUR. 
+Esto se puede vincular al formateador del campo numérico.
+
+
+Los modelos de vista pueden contener cualquier opción de configuración asignada a un control
+para vincular propiedades como la visibilidad.
+
+## Convenciones
+-------------
+
+- Utilizar tipos de datos en lugar de formateadores personalizados siempre que sea posible.
