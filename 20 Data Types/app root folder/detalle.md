@@ -13,6 +13,8 @@ con un separador decimal que depende de la configuración regional y dos dígito
 
 
 Se mostrará la lista de facturas con precios y unidades numéricas.
+![lista](data_type.png)
+
 
 1. Se modifica el fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml)
 
