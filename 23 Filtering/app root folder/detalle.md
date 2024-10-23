@@ -14,6 +14,33 @@ Se muestra un campo de búsqueda encima de la lista.
 
 1. Se modifica fichero [webapp/view/InvoiceList.view.xml](webapp/view/InvoiceList.view.xml).
 
+``` XML
+    <List
+        id="invoiceList"
+        headerText="{i18n>invoiceListTitle}"
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{invoice>/Invoices}">
+
+    <!-- begin insert     -->
+    <headerToolbar>
+         <Toolbar>
+            <Title text="{i18n>invoiceListTitle}"/>
+            <ToolbarSpacer/>
+            <SearchField 
+               width="50%" 
+               search=".onFilterInvoices"/>
+         </Toolbar>
+      </headerToolbar>        
+    <!-- end insert     -->
+
+        <items>
+            <ObjectListItem
+                title="{invoice>Quantity} x {invoice>ProductName}"
+
+```
+
+
 
 La vista se amplía con un control de búsqueda que agregamos a la lista de facturas. También necesitamos especificar un ID invoiceList para que el control de lista pueda identificar la lista a partir de la función del controlador de eventos onFilterInvoices que agregamos al campo de búsqueda. Además, el campo de búsqueda es parte del encabezado de la lista y, por lo tanto, cada cambio en el enlace de la lista activará una nueva representación de toda la lista, incluido el campo de búsqueda.
 
