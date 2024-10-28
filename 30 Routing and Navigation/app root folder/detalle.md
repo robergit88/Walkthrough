@@ -71,7 +71,7 @@ Cada ruta define un nombre, un patrón y uno o más destinos a los que navegar c
 
 - targets
 
-Un objetivo define una vista, o incluso otro componente, que se muestra; está asociado con una o más rutas y también se puede mostrar manualmente desde la aplicación. Siempre que se muestra un objetivo, se carga la vista correspondiente y se muestra en la aplicación. En nuestra aplicación, simplemente definimos dos objetivos con un nombre de vista que corresponde al nombre del objetivo.
+Un destino define una vista, o incluso otro componente, que se muestra; está asociado con una o más rutas y también se puede mostrar manualmente desde la aplicación. Siempre que se muestra un destino, se carga la vista correspondiente y se muestra en la aplicación. En nuestra aplicación, simplemente definimos dos destinos con nombres de vista que corresponden al nombre del objetivo.
 
 
 2. Se modifica fichero [webapp/Component.js](webapp/Component.js)
