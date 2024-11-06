@@ -1,0 +1,33 @@
+html[dir="ltr"] .myAppDemoWT .myCustomButton.sapMBtn {
+   margin-right: 0.125rem
+}
+html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
+   margin-left: 0.125rem
+}
+.myAppDemoWT .myCustomText {
+   display: inline-block;
+   font-weight: bold;
+}
+/*  ProductRating */
+.myAppDemoWTProductRating {
+   padding: 0.75rem;
+}
+.myAppDemoWTProductRating .sapMRI {
+   vertical-align: initial;
+}
+
+ /* Creamos una carpeta css que contendrá nuestros archivos CSS. 
+ En un nuevo archivo de definición de estilo dentro de la carpeta css creamos nuestras 
+ clases personalizadas combinadas con una clase de espacio de nombres personalizado. 
+ Esto asegura que los estilos solo se aplicarán en los controles que se utilizan dentro de nuestra 
+ aplicación. */
+
+ /* Un botón tiene un margen predeterminado de 0 que queremos anular: agregamos un margen personalizado 
+ de 2 px (o 0,125 rem calculado en relación con el tamaño de fuente predeterminado de 16 px) al botón 
+ con la clase de estilo myCustomButton. 
+ Agregamos la clase CSS sapMBtn para hacer nuestro selector más específico: en CSS, 
+ la regla con el selector más específico "gana".*/
+
+ /* En una clase adicional myCustomText definimos un texto en negrita y configuramos la visualización 
+ en bloque en línea. Esta vez simplemente definimos nuestra clase personalizada sin selectores 
+ adicionales. Todavía no establecemos un valor de color aquí, lo haremos en la vista. */
