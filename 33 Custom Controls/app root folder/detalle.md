@@ -7,7 +7,9 @@ En este paso, ampliaremos la funcionalidad de SAPUI5 con un control personalizad
 *****************************
 
 ## Previsualización
-![detalle](webapp/img/detalle_factura.png)
+![detalle](webapp/img/rate.png)
+
+
 Se agrega un control de calificación de producto personalizado a la página de detalles.
 
 ## Código
@@ -312,6 +314,19 @@ También podríamos hacer esto con más HTML en el renderizador, pero esta es la
 
 
 6. Se modifica [webapp/i18n/i18n.properties](webapp/i18n/i18n.properties)
+
+``` js
+
+# Detail Page
+detailPageTitle=Walkthrough - Details
+ratingConfirmation=You have rated this product with {0} stars
+
+# Product Rating
+productRatingLabelInitial=Please rate this product
+productRatingLabelIndicator=Your rating: {0} out of {1}
+productRatingLabelFinal=Thank you for your rating!
+productRatingButton=Rate
+```
 
 
 El paquete de recursos se amplía con el mensaje de confirmación y las cadenas a las que hacemos referencia dentro del control personalizado. Ahora podemos calificar un producto en la página de detalles con nuestro nuevo control.
