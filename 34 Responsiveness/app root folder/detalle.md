@@ -7,7 +7,7 @@ En este paso, mejoramos la capacidad de respuesta de nuestra aplicación. Las ap
 *****************************
 
 ## Previsualización
-![detalle](webapp/img/rate.png)
+![detalle](webapp/img/tablita.png)
 
 
 #### Una tabla responsiva oculta algunas de las columnas en dispositivos pequeños.
@@ -111,7 +111,10 @@ En este paso, mejoramos la capacidad de respuesta de nuestra aplicación. Las ap
 </mvc:View>
 ```
 
-Cambiamos la lista por una tabla simplemente reemplazando la etiqueta <List> con <Table>. La tabla tiene una función de respuesta integrada que nos permite hacer que la aplicación sea más flexible. La tabla y la lista comparten el mismo conjunto de propiedades, por lo que podemos simplemente reutilizarlas y también el clasificador.
+Cambiamos la lista por una tabla simplemente reemplazando la etiqueta **List** con **Table**.
+
+
+La tabla tiene una función de respuesta integrada que nos permite hacer que la aplicación sea más flexible. La tabla y la lista comparten el mismo conjunto de propiedades, por lo que podemos simplemente reutilizarlas y también el clasificador.
 
 Dado que una tabla tiene varias celdas en cada fila, tenemos que definir columnas para nuestra tabla y nombrarlas según los datos. Agregamos cinco controles sap.m.Column a la agregación de columnas y configuramos cada uno de ellos de forma ligeramente diferente:
 
