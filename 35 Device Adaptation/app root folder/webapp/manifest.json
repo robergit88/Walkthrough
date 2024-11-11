@@ -1,0 +1,112 @@
+{
+  "_version": "1.58.0",
+  "sap.app": {
+    "id": "ui5.walkthrough",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "dataSources": {
+      "invoiceRemote": {
+        "uri": "V2/Northwind/Northwind.svc/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "dependencies": {
+      "minUI5Version": "1.108.0",
+      "libs": {
+        "sap.ui.core": {},
+        "sap.m": {}
+      }
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "ui5.walkthrough.i18n.i18n",
+          "supportedLocales": [
+            ""
+          ],
+          "fallbackLocale": ""
+        }
+      },
+      "invoice": {
+        "dataSource": "invoiceRemote"
+      }
+    },
+    "rootView": {
+      "viewName": "ui5.walkthrough.view.App",
+      "type": "XML",
+      "id": "app"
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css",
+          "_comment": [
+            "En la sección de recursos del espacio de nombres sap.ui5",
+            "se pueden cargar recursos adicionales para la aplicación.",
+            "Cargamos los estilos CSS definiendo una URI relativa al componente",
+            "Cargamos los estilos CSS definiendo un URI relativo al componente.",
+            "SAPUI5 luego agrega este archivo al encabezado de la página HTML como una etiqueta <enlace>",
+            "como en las páginas web simples, y el navegador lo carga automáticamente"
+          ]
+        }
+      ]
+    },
+    "routing": {
+      "_comment": ["...AQUI SE DEFINE LA NAVEGACION DE VISTAS..."]
+      ,
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "type": "View",
+        "viewType": "XML",
+        "path": "ui5.walkthrough.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "overview",
+          "target": "overview"
+        },
+        {
+          "pattern": "detail/{invoicePath}",
+          "name": "detail",
+          "target": "detail"
+        }
+      ],
+      "targets": {
+        "overview": {
+          "id": "overview",
+          "name": "Overview"
+        },
+        "detail": {
+          "id": "detail",
+          "name": "Detail"
+        }
+      }
+    }
+  }
+}
